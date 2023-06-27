@@ -1,0 +1,44 @@
+body {
+    max-width: 1000px;
+    margin: auto;
+    padding: 10px;
+  }
+
+.container {
+    display:flex;
+}
+
+.box1 {
+    flex: 1;
+    height: 500px;
+}
+
+.box2 {
+    flex: 2;
+    height: 500px;
+}
+
+@media (max-width: 400px) {
+    .container {
+        flex-direction: column;
+        height: 500px;
+    }
+    a {
+        padding: 3px;
+    }
+}
+
+.skip-to-content-link {
+    background: #f1d639;
+    height: 40px;
+    width: auto;  
+    left: 70%;
+    padding: 10px;
+    position: absolute;
+    transform: translateY(-200%);
+    transition: transform 0.3s;
+}
+  
+.skip-to-content-link:focus{
+    transform: translateY(0%);
+}

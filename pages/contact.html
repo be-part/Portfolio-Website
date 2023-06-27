@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../assets/css/nav.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/layout.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/light-dark-mode.css" />
+    <style>
+        .switch {
+            display: none;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+    <title>BP-Home</title>
+</head>
+<body class="hidden">
+      
+    <a class="skip-to-content-link" href="#main">
+        Skip to content
+    </a>
+
+    <nav class="nav-bar">
+        <ul class="nav-list">
+          <li class="nav-li"><a href="./index.html">Home</a></li>
+          <li class="nav-li"><a href="./projects.html">Projects</a></li>
+          <li class="nav-li"><a href="./skills.html">Skills</a></li>
+          <li class="nav-li"><a href="./aboutme.html">About Me</a></li>
+          <li class="nav-li"><a href="./contact.html">Contact</a></li>
+        </ul>
+    </nav>
+   
+    <label class="switch">
+        <input type="checkbox" id="modeCheckBox">
+        <span class="slider"></span>  
+    </label>
+
+    <script>
+        function setPref() {
+            document.querySelector('.switch').style.display = 'inline-block';
+
+            if (localStorage.getItem("mode") === "dark") {
+                let element = document.body;
+                element.classList.add('dark-mode')
+                element.classList.remove('light-mode')
+                document.getElementById("modeCheckBox").checked = true;
+            } else {
+                let element = document.body;
+                element.classList.add('light-mode')
+                element.classList.remove('dark-mode')
+                document.getElementById("modeCheckBox").checked = false;
+            }
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            document.body.classList.remove('hidden');
+            setPref();
+        });
+
+        let checkBox = document.getElementById("modeCheckBox");
+        
+        function toggleLightDark() {
+            if (checkBox.checked) {
+                let element = document.body;
+                element.classList.add('dark-mode')
+                element.classList.remove('light-mode')
+                localStorage.setItem("mode", "dark")
+            } else {
+                let element = document.body;
+                element.classList.add('light-mode')
+                element.classList.remove('dark-mode')
+                localStorage.setItem("mode", "light")
+            }
+        }
+        checkBox.addEventListener("change", toggleLightDark);
+    </script>
+    
+  
+    <div class="container">
+        <div class="box1"> <p>Contact</p></div>
+        <main class="box2"></main>
+    </div>
+
+</body>
+</html>
