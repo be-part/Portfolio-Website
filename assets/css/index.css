@@ -1,10 +1,14 @@
-img {
+.img-profile-pic {
     width:160px;
     height:200px;
     object-fit: cover;
     border-radius: 50px;
 }
 
+.img-icons {
+    width:50px;
+    height:50px;
+}
 
 
 #about-me-box2 {
@@ -13,8 +17,8 @@ img {
 }
 
 #intro {
-    padding: 10px;
-    margin: 3px;
+    padding: 12px;
+    margin: 2px;
     max-width: 700px;
     border-radius: 8px;
 }
@@ -25,12 +29,12 @@ img {
         background: linear-gradient(to right, #20DD88, #F9C486);
         padding: 1px;
         border-radius: 8px;
-        margin: 8px;
+        margin: 10px;
 }
 
 #skills {
-    padding: 10px;
-    margin: 3px;
+    padding: 12px;
+    margin: 2px;
     max-width: 700px;
     border-radius: 8px;
 }
@@ -41,14 +45,18 @@ img {
         background: linear-gradient(to right, #BA69E1, #2C4CBD);
         padding: 1px;
         border-radius: 8px;
-        margin: 8px;
+        margin: 10px;
 }
 
 #skills-images {
-    padding: 10px;
-    margin: 3px;
+    padding: 12px;
+    margin: 2px;
     max-width: 700px;
     border-radius: 8px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .border-wrap3 {
@@ -57,5 +65,26 @@ img {
     background: linear-gradient(to right, #F9E085, #FF6CCA);
     padding: 1px;
     border-radius: 8px;
-    margin: 8px;
+    margin: 10px;
+}
+
+.footer {
+    margin-top: auto;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-image: linear-gradient(to right, #BA69E1, #2C4CBD);
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.credits {
+    font-family: 'Roboto', 'sans-serif', 'Courier New', Courier, monospace;
+    font-weight: 400;
+    font-size:x-large;
+    display: inline;
 }

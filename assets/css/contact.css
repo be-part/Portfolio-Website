@@ -1,3 +1,7 @@
+.hyperlinked-icons {
+    padding: 5px;
+}
+
 form input, form textarea {
     width: 100%;
     padding: 12px;
@@ -63,4 +67,25 @@ form button:hover {
     border-width: 3px;
     border-style: solid;
     color:#20DD88;
+}
+
+.footer {
+    margin-top: auto;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-image: linear-gradient(to right, #BA69E1, #2C4CBD);
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.credits {
+    font-family: 'Roboto', 'sans-serif', 'Courier New', Courier, monospace;
+    font-weight: 400;
+    font-size:x-large;
+    display: inline;
 }

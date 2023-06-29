@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="../assets/css/nav.css" />
     <link rel="stylesheet" type="text/css" href="../assets/css/layout.css" />
     <link rel="stylesheet" type="text/css" href="../assets/css/light-dark-mode.css" />
-    <link rel="stylesheet" type="text/css" href="../assets/css/about-me.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -28,10 +28,10 @@
     </a>
     <nav class="nav-bar">
         <ul class="nav-list">
-          <li class="nav-li"><a href="./index.html">Home</a></li>
-          <li class="nav-li"><a href="./projects.html">Projects</a></li>
-          <li class="nav-li"><a href="./aboutme.html">About Me</a></li>
-          <li class="nav-li"><a href="./contact.html">Contact</a></li>
+            <li class="nav-li"><a class="nav-a" href="./index.html">Home</a></li>
+            <li class="nav-li"><a class="nav-a" href="./projects.html">Projects</a></li>
+            <li class="nav-li"><a class="nav-a" href="./aboutme.html">About Me</a></li>
+            <li class="nav-li"><a class="nav-a" href="./contact.html">Contact</a></li>
         </ul>
       
         <div class="nav-right">
@@ -94,8 +94,11 @@
             <h1> Bronwyn Parton </h1>
             <div class="image-container-about-me">
             <img    src="../assets/images/profile-image.jpg" 
-                    alt="Woman smiling at camera with long, wavy auburn hair and a leaf blouse on.">
+                    alt="Woman smiling at camera with long, wavy auburn hair and a leaf blouse on."
+                    class="img-profile-pic"
+                    >
             </div>
+            
         </section>
         
         
@@ -118,12 +121,26 @@
 
             <div class="border-wrap3">
             <section id="skills-images">
-                    <p> Images go here... </p>
+                    <img class="img-icons" src="./assets/icons/javascript-icon.png" alt="javascript logo">
+                    <img class="img-icons" src="./assets/icons/html-icon.png" alt="html logo">
+                    <img class="img-icons" src="./assets/icons/css-icon.png" alt="css logo">
+                    <img class="img-icons" src="./assets/icons/react-icon.png" alt="react logo">
+                    <img class="img-icons" src="./assets/icons/sql-icon.png" alt="sql-icon.png logo">
+                    <img class="img-icons" src="./assets/icons/postgres-icon.png" alt="postgres-icon.png logo">
+                    <img class="img-icons" src="./assets/icons/firebase-icon.png" alt="firebase logo">
+                    <img class="img-icons" src="./assets/icons/github-icon.png" alt="github logo">
+                    <img class="img-icons" src="./assets/icons/jest-icon.png" alt="jest logo">
             </section>
             </div>
 
         </main>
     </div>
+    
+    <footer class="footer">
+        <p class="credits">icons by</p>
+        <a class="credits" target="_blank" href="https://icons8.com">Icons8</a> >>
+        <a class="credits" target="_blank" href="https://icons8.com/icon/44019/linkedin">LinkedIn</a> 
+    </footer>
 
 </body>
 </html>

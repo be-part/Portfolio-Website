@@ -28,10 +28,10 @@
     </a>
     <nav class="nav-bar">
         <ul class="nav-list">
-          <li class="nav-li"><a href="./index.html">Home</a></li>
-          <li class="nav-li"><a href="./projects.html">Projects</a></li>
-          <li class="nav-li"><a href="./aboutme.html">About Me</a></li>
-          <li class="nav-li"><a href="./contact.html">Contact</a></li>
+            <li class="nav-li"><a class="nav-a" href="./index.html">Home</a></li>
+            <li class="nav-li"><a class="nav-a" href="./projects.html">Projects</a></li>
+            <li class="nav-li"><a class="nav-a" href="./aboutme.html">About Me</a></li>
+            <li class="nav-li"><a class="nav-a" href="./contact.html">Contact</a></li>
         </ul>
       
         <div class="nav-right">
@@ -88,13 +88,18 @@
         checkBox.addEventListener("change", toggleLightDark);
     </script>
     
-  
+    <main>
     <div class="container">
         <div class="box1"> 
             <h1> Contact me:</h1> 
             <p> Send me a message here or check out my social media.🌱</p>
+            <div class="hyperlinked-icons">
+                <a target="_blank" href="https://github.com/be-part"><img src="./assets/icons/github-colour-icon.png"  alt="neon pink and blue git hub icon"/></a>
+                <a target="_blank" href="https://www.linkedin.com/in/bronwyn-parton/"><img src="./assets/icons/linkedin-colour-icon.png"  alt="neon pink and blue linked in icon"/></a>
+            </div>
         </div>
 
+        
         <div class="box2">
             <div class="border-wrap1">
 
@@ -121,10 +126,17 @@
                   </form>
 
             </div>
-            </div>
         </div>
-        </main>
+        </div>
+        
     </div>
+    </main>
+    
+    <footer class="footer">
+        <p class="credits">icons by</p>
+        <a class="credits" target="_blank" href="https://icons8.com">Icons8</a> >>
+        <a class="credits" target="_blank" href="https://icons8.com/icon/44019/linkedin">LinkedIn</a> 
+    </footer>
 
 </body>
 </html>
