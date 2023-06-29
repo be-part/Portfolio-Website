@@ -7,6 +7,10 @@
     <link rel="stylesheet" type="text/css" href="../assets/css/nav.css" />
     <link rel="stylesheet" type="text/css" href="../assets/css/layout.css" />
     <link rel="stylesheet" type="text/css" href="../assets/css/light-dark-mode.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/contact.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <style>
         .switch {
             display: none;
@@ -18,25 +22,31 @@
     <title>BP-Home</title>
 </head>
 <body class="hidden">
-      
+    
     <a class="skip-to-content-link" href="#main">
         Skip to content
     </a>
-
     <nav class="nav-bar">
         <ul class="nav-list">
           <li class="nav-li"><a href="./index.html">Home</a></li>
           <li class="nav-li"><a href="./projects.html">Projects</a></li>
-          <li class="nav-li"><a href="./skills.html">Skills</a></li>
           <li class="nav-li"><a href="./aboutme.html">About Me</a></li>
           <li class="nav-li"><a href="./contact.html">Contact</a></li>
         </ul>
-    </nav>
+      
+        <div class="nav-right">
+          <ul>
+            <li>
+              <label class="switch">
+                <input type="checkbox" id="modeCheckBox">
+                <span class="slider"></span>  
+              </label>
+            </li>
+          </ul>
+        </div>
+      </nav>
    
-    <label class="switch">
-        <input type="checkbox" id="modeCheckBox">
-        <span class="slider"></span>  
-    </label>
+                
 
     <script>
         function setPref() {
@@ -80,8 +90,32 @@
     
   
     <div class="container">
-        <div class="box1"> <p>Contact</p></div>
-        <main class="box2"></main>
+        <div class="box1"> <h1> Contact me:</h1> </div>
+
+        <div class="box2">
+            <div class="border-wrap1">
+            <div class="form-container" id="contact-form">
+                <form form name="contact" method="POST" data-netlify="true">
+              
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+              
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+              
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="someone@example.com" required>
+                    </br>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Your message or inquiry." style="height:160px"></textarea>
+                
+                    <button type="submit">Send</button>
+              
+                </form>
+            </div>
+            </div>
+        </div>
+        </main>
     </div>
 
 </body>
