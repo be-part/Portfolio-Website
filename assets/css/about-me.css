@@ -1,0 +1,61 @@
+img {
+    width:160px;
+    height:200px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+
+
+#about-me-box2 {
+    flex-direction: column;
+    padding: 10px;
+}
+
+#intro {
+    padding: 10px;
+    margin: 3px;
+    max-width: 700px;
+    border-radius: 8px;
+}
+
+.border-wrap1{
+        max-width: 700px;
+        position: relative;
+        background: linear-gradient(to right, #20DD88, #F9C486);
+        padding: 1px;
+        border-radius: 8px;
+        margin: 8px;
+}
+
+#skills {
+    padding: 10px;
+    margin: 3px;
+    max-width: 700px;
+    border-radius: 8px;
+}
+
+.border-wrap2{
+        max-width: 700px;
+        position: relative;
+        background: linear-gradient(to right, #BA69E1, #2C4CBD);
+        padding: 1px;
+        border-radius: 8px;
+        margin: 8px;
+}
+
+#skills-images {
+    padding: 10px;
+    margin: 3px;
+    max-width: 700px;
+    border-radius: 8px;
+}
+
+.border-wrap3 {
+    max-width: 700px;
+    position: relative;
+    background: linear-gradient(to right, #F9E085, #FF6CCA);
+    padding: 1px;
+    border-radius: 8px;
+    margin: 8px;
+}
