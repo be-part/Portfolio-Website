@@ -1,60 +1,66 @@
-form {
-    width: 100%; 
-    padding: 5px; 
-    box-sizing: border-box; 
-    display: flex;
-    flex-direction: column;
-    font-family: 'Roboto', 'sans-serif', 'Courier New', Courier, monospace;
-    font-weight: 400;
-  }
-
-input:focus, textarea:focus {
-    border:1px solid #97d6eb;
+form input, form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+    background: #ffffff;
+    border-color: #20DD88;
+    border-width: 3px;
+    border-style: solid;
 }
 
-form input, form textarea {
-    border: 0;
-    margin: 10px 0;
-    padding: 15px;
-    outline: none;
-    background: #dbdbe2;
-    border-radius: 4px;
-  }
+form input:focus,
+form textarea:focus {
+    outline: none !important;
+    border-color: #F9C486 !important;
+    border-width: 3px;
+    border-style: solid;
+}
 
-  form button {
-    padding: 15px;
-    background: pink;
-    color: white;
-    font-size: 18px;
-    border: 0;
-    outline: none;
-    cursor: pointer;
-    width: 150px;
-    margin: 20px auto 0;
-    border-radius: 10px;
-    text-align: center;
-  }
+form label {
+    font-family: 'Roboto', 'sans-serif', 'Courier New', Courier, monospace;
+    font-weight: 400;
+    display: block;
+}
   
-  /* Add a background color and some padding around the form */
-.form-container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-    max-width: 600px;
-  }
-
-#contact-form {
+#form-container {
     padding: 10px;
     margin: 3px;
-    max-width: 600px;
+    max-width: 700px;
     border-radius: 8px;
 }
 
-.border-wrap1{
-    max-width: 600px;
+.border-wrap1 {
+    max-width: 700px;
     position: relative;
     background: linear-gradient(to right, #20DD88, #F9C486);
     padding: 1px;
     border-radius: 8px;
     margin: 14px;
+}
+
+form button {
+    padding: 15px;
+    background: #20DD88;
+    color: white;
+    font-size: 20px;
+    font-weight:bold;
+    border-color: #20DD88;
+    border-width: 3px;
+    border-style: solid;
+    outline: none;
+    cursor: pointer;
+    width: 120px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+form button:hover {
+    background: #ffffff;
+    border-color: #20DD88;
+    border-width: 3px;
+    border-style: solid;
+    color:#20DD88;
 }

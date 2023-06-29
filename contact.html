@@ -90,13 +90,19 @@
     
   
     <div class="container">
-        <div class="box1"> <h1> Contact me:</h1> </div>
+        <div class="box1"> 
+            <h1> Contact me:</h1> 
+            <p> Send me a message here or check out my social media.🌱</p>
+        </div>
 
         <div class="box2">
             <div class="border-wrap1">
-            <div class="form-container" id="contact-form">
-                
-                <form name="contact" method="POST" data-netlify="true">
+
+                <form id="form-container" 
+                name="contact" 
+                    method="POST" 
+                    data-netlify="true"
+                    data-netlify-recaptcha="true">
                     <p>
                       <label>Name: <input type="text" name="name" placeholder="Your name.." required /> </label>
                     </p>
@@ -108,6 +114,7 @@
                     <p>
                       <label>Message: <textarea name="message" placeholder="Your message or inquiry." style="height:160px"></textarea></label>
                     </p>
+                    <div data-netlify-recaptcha="true"></div>
                     <p>
                       <button type="submit">Send</button>
                     </p>
