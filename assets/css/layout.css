@@ -1,3 +1,9 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 .container {
     display:flex;
     height: 100vh;
@@ -30,7 +36,7 @@ h1 {
 p {
     font-family: 'Roboto', 'sans-serif', 'Courier New', Courier, monospace;
     font-weight: 400;
-    font-size: larger;
+    font-size: large;
 }
 
 /* Breakpoints */

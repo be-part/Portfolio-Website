@@ -17,7 +17,7 @@ ul {
     display:inline;
 }
 
-a {
+.nav-a {
     display:inline-block;
     padding: 10px;
     font-size: 25px;
