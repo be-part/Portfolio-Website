@@ -38,6 +38,21 @@
   color: rgb(255, 255, 255);
 }
 
+.dark-mode #project1 {
+  background-color: rgb(27, 26, 26);
+  color: rgb(255, 255, 255);
+}
+
+.dark-mode #project2 {
+  background-color: rgb(27, 26, 26);
+  color: rgb(255, 255, 255);
+}
+
+.dark-mode #project3 {
+  background-color: rgb(27, 26, 26);
+  color: rgb(255, 255, 255);
+}
+
 /* Mode Styling - Light */
 
 .light-mode {
@@ -77,6 +92,20 @@
   color: black;
 }
 
+.light-mode #project1 {
+  background-color: rgb(245, 245, 229);
+  color: black;
+}
+
+.light-mode #project2 {
+  background-color: rgb(245, 245, 229);
+  color: black;
+}
+
+.light-mode #project3 {
+  background-color: rgb(245, 245, 229);
+  color: black;
+}
 /* Switch Styling */
 
 /* The switch - the box around the slider */

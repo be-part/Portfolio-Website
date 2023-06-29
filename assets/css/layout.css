@@ -45,7 +45,7 @@ p {
         display:flex;
         height: 500px;
     }
-    a {
+    .nav-a {
         display:inline-block;
         padding: 4px;
         font-size: 20px;
@@ -55,7 +55,11 @@ p {
         text-align: right;
     }
     h1 {
-        font-size: 30px;
+        font-size: 25px;
+    }
+
+    p {
+        font-size: medium;
     }
 }
 
@@ -64,7 +68,7 @@ p {
         flex-direction: column;
         height: 500px;
     }
-    a {
+    .nav-a {
         display:inline-block;
         padding: 4px;
         font-size: 15px;
@@ -74,8 +78,13 @@ p {
         text-align: right;
     }
     h1 {
-        font-size: 30px;
+        font-size: 20px;
     }
+
+    p {
+        font-size: medium;
+    }
+
     .box1 {
         flex: 1;
         display: flex;
