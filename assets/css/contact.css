@@ -1,0 +1,60 @@
+form {
+    width: 100%; 
+    padding: 5px; 
+    box-sizing: border-box; 
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', 'sans-serif', 'Courier New', Courier, monospace;
+    font-weight: 400;
+  }
+
+input:focus, textarea:focus {
+    border:1px solid #97d6eb;
+}
+
+form input, form textarea {
+    border: 0;
+    margin: 10px 0;
+    padding: 15px;
+    outline: none;
+    background: #dbdbe2;
+    border-radius: 4px;
+  }
+
+  form button {
+    padding: 15px;
+    background: pink;
+    color: white;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  /* Add a background color and some padding around the form */
+.form-container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    max-width: 600px;
+  }
+
+#contact-form {
+    padding: 10px;
+    margin: 3px;
+    max-width: 600px;
+    border-radius: 8px;
+}
+
+.border-wrap1{
+    max-width: 600px;
+    position: relative;
+    background: linear-gradient(to right, #20DD88, #F9C486);
+    padding: 1px;
+    border-radius: 8px;
+    margin: 14px;
+}
