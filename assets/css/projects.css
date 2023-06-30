@@ -1,3 +1,8 @@
+.projects-text {
+    text-align: end;
+    max-width: 400px;
+}
+
 .project-imgs {
     width: 100%;
     height: auto;
@@ -7,9 +12,26 @@
     border-color: #9c9fa5;
 }
 
+#project-container {
+    padding: 12px;
+    margin: 2px;
+    max-width: 900px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .image-container {
     position: relative;
     width: 50%;
+    min-width: 300px;
+}
+
+.text-container {
+    max-width: 400px;
+    margin: 5px;
+    padding: 5px;
 }
 
 .overlay {
@@ -42,13 +64,6 @@
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
-}
-
-#project1 {
-    padding: 12px;
-    margin: 2px;
-    max-width: 900px;
-    border-radius: 8px;
 }
 
 .border-wrap1{

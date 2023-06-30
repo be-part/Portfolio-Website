@@ -31,6 +31,7 @@ h1 {
     font-family: 'Roboto', 'sans-serif', 'Courier New', Courier, monospace;
     font-weight: 700;
     font-size: 40px;
+    text-align: end;
 }
 
 p {
@@ -60,6 +61,12 @@ p {
 
     p {
         font-size: medium;
+    }
+    #project-container {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 }
 
@@ -92,6 +99,12 @@ p {
         align-items: center;
         margin-right: 0px;
       }
+      #project-container {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 }
 
 
