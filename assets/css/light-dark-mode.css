@@ -62,12 +62,12 @@
 }
 
 .light-mode {
-    background-color: rgb(252, 252, 245);
+    background-color: rgb(252, 252, 252);
     color: black;
 }
 
 .light-mode .box2 {
-    background-color: rgb(252, 252, 245);
+    background-color: rgb(252, 252, 252);
 }
 
 .light-mode .nav-a  {
@@ -75,37 +75,37 @@
 }
 
 .light-mode #intro {
-    background-color: rgb(252, 252, 245);
+    background-color: rgb(252, 252, 252);
     color: black;
 }
 
 .light-mode #skills {
-  background-color: rgb(252, 252, 245);
+  background-color: rgb(252, 252, 252);
   color: black;
 }
 
 .light-mode #skills-images {
-  background-color: rgb(252, 252, 245);
+  background-color: rgb(252, 252, 252);
   color: black;
 }
 
 .light-mode #form-container {
-  background-color: rgb(252, 252, 245);
+  background-color: rgb(252, 252, 252);
   color: black;
 }
 
 .light-mode #project-container {
-  background-color: rgb(252, 252, 245);
+  background-color: rgb(252, 252, 252);
   color: black;
 }
 
 .light-mode #about-me-container {
-  background-color: rgb(252, 252, 245);
+  background-color: rgb(252, 252, 252);
   color: black;
 }
 
 .light-mode .switch {
-  border: 1px solid rgb(252, 252, 245);
+  border: 1px solid rgb(252, 252, 252);
 }
 
 
