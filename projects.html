@@ -35,10 +35,10 @@
         <div class="nav-right">
           <ul>
             <li>
-              <label class="switch">
-                <input type="checkbox" id="modeCheckBox">
-                <span class="slider"></span>  
-              </label>
+                <label class="switch" aria-label="Light/dark mode toggle">
+                    <input type="checkbox" id="modeCheckBox">
+                    <span class="slider"></span>  
+                </label>
             </li>
           </ul>
         </div>
@@ -70,6 +70,13 @@
 
         let checkBox = document.getElementById("modeCheckBox");
         
+        checkBox.addEventListener("keydown", (e) => {
+        if( e.key === "Enter"){
+        checkBox.checked = !checkBox.checked;
+        toggleLightDark();
+        }
+        });
+
         function toggleLightDark() {
             if (checkBox.checked) {
                 let element = document.body;
@@ -232,8 +239,8 @@
     
     <footer class="footer">
         <p class="credits">icons by</p>
-        <a class="credits" target="_blank" href="https://icons8.com">Icons8</a>
-        <a class="credits" target="_blank" href="https://icons8.com/icon/44019/linkedin">LinkedIn</a> 
+        <a class="credits" target="_blank" aria-label="Icons8 website" href="https://icons8.com">Icons8</a>
+        <a class="credits" target="_blank" aria-label="Linkedin for Icons8" href="https://icons8.com/icon/44019/linkedin">LinkedIn</a> 
     </footer>
     
 
