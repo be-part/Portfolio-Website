@@ -152,9 +152,29 @@ p {
         margin: 5px !important;;
     }
 
+    .image-container {
+        text-align: center !important;
+    }
     
-}
+    .project-imgs {
+        width: 90% !important;
+    }
 
+    .overlay1 {
+        width: 90% !important;
+        left: 13px !important;
+    }
+
+    .overlay2 {
+        width: 90% !important;
+        left: 13px !important;
+    }
+
+    .overlay3 {
+        width: 90% !important;
+        left: 13px !important;
+    }
+}
 
 .skip-to-content-link {
     background: #f1a739;
