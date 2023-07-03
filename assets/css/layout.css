@@ -91,16 +91,19 @@ p {
         justify-content: space-between;
     }
 
-    .btn-wrapper-tech {
-        font-size: 14px;
+    .text {
+        font-size: 16px !important;
     }
 
     .btn-wrapper-tech {
         padding: 5px !important;
-        width: 70px !important;;
+        width: 90px !important;;
         margin: 5px !important;;
     }
 
+    .credits {
+        font-size: small !important;
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -135,13 +138,13 @@ p {
         justify-content: space-between;
     }
 
-    .btn-wrapper-tech {
-        font-size: 14px;
+    .text {
+        font-size: 16px !important;
     }
 
     .btn-wrapper-tech {
         padding: 5px !important;
-        width: 70px !important;;
+        width: 90px !important;;
         margin: 5px !important;;
     }
 
@@ -166,6 +169,10 @@ p {
     .overlay3 {
         width: 90% !important;
         left: 13px !important;
+    }
+
+    .credits {
+        font-size: small !important;
     }
 }
 
@@ -204,6 +211,7 @@ p {
 .credits {
     font-family: 'Roboto', 'sans-serif', 'Courier New', Courier, monospace;
     font-weight: 400;
-    font-size:large;
+    font-size:medium;
     display: inline;
+    color:black;
 }

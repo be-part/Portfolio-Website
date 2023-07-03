@@ -1,7 +1,7 @@
 
 /* Mode Styling - Dark */
 .dark-mode h1::before{
-    background-color: #4451C3;
+    background-color: #2D4CBD;
 }
 
 .dark-mode {
@@ -13,7 +13,7 @@
     background-color: rgb(27, 26, 26);
 }
 
-.dark-mode a {
+.dark-mode .nav-a {
     color:rgb(255, 255, 255)
 }
 
@@ -51,6 +51,10 @@
   border: 1px solid rgb(27, 26, 26);
 }
 
+.dark-mode .img-icons {
+  filter:invert(1);
+}
+
 /* Mode Styling - Light */
 
 .light-mode h1::before{
@@ -66,7 +70,7 @@
     background-color: rgb(252, 252, 238);
 }
 
-.light-mode a {
+.light-mode .nav-a  {
     color:rgb(0, 0, 0)
 }
 
@@ -156,7 +160,7 @@
   
   input:checked + .slider:before {
     transform:translateX(1.5em);
-    background: #feffff;
+    background: rgb(27, 26, 26);
     box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -5px 0 0 #a3dafb;
   }
 
