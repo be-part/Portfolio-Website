@@ -1,17 +1,12 @@
+/* General Page Styling */
+
+/* Page intro text */
 .projects-text {
     text-align: end;
     max-width: 400px;
 }
 
-.project-imgs {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #9c9fa5;
-}
-
+/* Project container layout */
 #project-container {
     padding: 12px;
     margin: 2px;
@@ -22,19 +17,114 @@
     justify-content: space-between;
 }
 
+/* Image styling */
+.project-imgs {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #9c9fa5;
+}
+
 .image-container {
     position: relative;
     width: 50%;
     min-width: 300px;
 }
 
+/* Overlay text */
+.text {
+    color: rgb(0, 0, 0);
+    position: absolute;
+    font-size: 20px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+/* Project text */
 .text-container {
     max-width: 400px;
     margin: 5px;
     padding: 5px;
+    display: flex;
+    flex-direction: column;
 }
 
-.overlay {
+/* Project links */
+.text-container a {
+    font-family: 'Roboto', 'sans-serif', 'Courier New', Courier, monospace;
+    font-size: large;
+    display: inline-block;
+    text-align: center;
+}
+
+/* Tech stack info */
+.tech-btns {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    white-space: nowrap;
+    justify-content: center;
+}
+
+.btn-wrapper-tech {
+    padding: 5px;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    border-color: #ffffff;
+    border-width: 3px;
+    border-style: solid;
+    outline: none;
+    width: 100px;
+    border-radius: 20px;
+    text-align: center;
+    margin: 5px;
+    overflow: hidden;
+    display: inline-block;
+    font-family: 'Roboto', 'sans-serif', 'Courier New', Courier, monospace;
+    font-weight: 400;
+}
+
+/* Project 1 Styling */
+.btn-wrapper1 {
+    padding: 15px;
+    background: #eec739;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    border-color: #eec739;
+    border-width: 3px;
+    border-style: solid;
+    outline: none;
+    cursor: pointer;
+    width: 140px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 5px;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+.btn-wrapper1:hover {
+    background: #ffffff;
+    border-color: #eec739;
+    border-width: 3px;
+    border-style: solid;
+    color:#eec739;
+    font-weight:bold;
+}
+
+.overlay1 {
     position: absolute;
     top: 0;
     left: 0;
@@ -46,24 +136,12 @@
     border-radius: 10px;
     border-style: solid;
     border-width: 1px;
-    border-color: #ecc431
+    border-color: #f1ce50;
   }
 
 
-.image-container:hover .overlay {
+.image-container:hover .overlay1 {
         opacity: 0.9;
-}
-
-.text {
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
 }
 
 .border-wrap1{
@@ -75,56 +153,116 @@
         margin: 10px;
 }
 
-#project2 {
-    padding: 12px;
-    margin: 2px;
-    max-width: 900px;
-    border-radius: 8px;
+/* Project 2 Styling */
+.btn-wrapper2 {
+    padding: 15px;
+    background: #BA69E1;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    border-color: #BA69E1;
+    border-width: 3px;
+    border-style: solid;
+    outline: none;
+    cursor: pointer;
+    width: 140px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 5px;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+.btn-wrapper2:hover {
+    background: #ffffff;
+    border-color: #BA69E1;
+    border-width: 3px;
+    border-style: solid;
+    color:#BA69E1;
+    font-weight:bold;
+}
+
+.overlay2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #ca90e6;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #BA69E1;
+  }
+
+
+.image-container:hover .overlay2 {
+        opacity: 0.9;
 }
 
 .border-wrap2{
-        max-width: 900px;
-        position: relative;
-        background: linear-gradient(to right, #BA69E1, #2C4CBD);
-        padding: 1px;
-        border-radius: 8px;
-        margin: 10px;
-}
-
-#project3 {
-    padding: 12px;
-    margin: 2px;
-    max-width: 900px;
-    border-radius: 8px;
-}
-
-.border-wrap3 {
     max-width: 900px;
     position: relative;
-    background: linear-gradient(to right, #20DD88, #F9C486);
+    background: linear-gradient(to right, #BA69E1, #2C4CBD);
     padding: 1px;
     border-radius: 8px;
     margin: 10px;
 }
 
-
-.footer {
-    margin-top: auto;
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 0;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-image: linear-gradient(to right, #BA69E1, #2C4CBD);
+/* Project 2 Styling */
+.btn-wrapper3 {
+    padding: 15px;
+    background: #1aac6a;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    border-color: #1aac6a;
+    border-width: 3px;
+    border-style: solid;
+    outline: none;
+    cursor: pointer;
+    width: 140px;
+    border-radius: 10px;
     text-align: center;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    margin: 5px;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+.btn-wrapper3:hover {
+    background: #ffffff;
+    border-color: #1aac6a;
+    border-width: 3px;
+    border-style: solid;
+    color:#1aac6a;
+    font-weight:bold;
 }
 
-.credits {
-    font-family: 'Roboto', 'sans-serif', 'Courier New', Courier, monospace;
-    font-weight: 400;
-    font-size:x-large;
-    display: inline;
+.overlay3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #63dfa7;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #20DD88
+  }
+
+
+.image-container:hover .overlay3 {
+        opacity: 0.9;
+}
+
+.border-wrap3 {
+    max-width: 900px;
+    position: relative;
+    background: linear-gradient(to right, #20DD88, #F9E085);
+    padding: 1px;
+    border-radius: 8px;
+    margin: 10px;
 }

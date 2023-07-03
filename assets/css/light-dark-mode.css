@@ -43,29 +43,25 @@
   color: rgb(255, 255, 255);
 }
 
-.dark-mode #project2 {
+.dark-mode #about-me-container {
   background-color: rgb(27, 26, 26);
   color: rgb(255, 255, 255);
 }
 
-.dark-mode #project3 {
-  background-color: rgb(27, 26, 26);
-  color: rgb(255, 255, 255);
-}
 
 /* Mode Styling - Light */
 
 .light-mode {
-    background-color: rgb(245, 245, 229);
+    background-color: rgb(243, 243, 236);
     color: black;
 }
 
 .light-mode .box1 {
-    background-color: rgb(245, 245, 229);
+    background-color: rgb(243, 243, 236);
 }
 
 .light-mode .box2 {
-    background-color: rgb(245, 245, 229);
+    background-color: rgb(243, 243, 236);
 }
 
 .light-mode a {
@@ -73,41 +69,37 @@
 }
 
 .light-mode #intro {
-    background-color: rgb(245, 245, 229);
+    background-color: rgb(243, 243, 236);
     color: black;
 }
 
 .light-mode #skills {
-  background-color: rgb(245, 245, 229);
+  background-color: rgb(243, 243, 236);
   color: black;
 }
 
 .light-mode #skills-images {
-  background-color: rgb(245, 245, 229);
+  background-color: rgb(243, 243, 236);
   color: black;
 }
 
 .light-mode #form-container {
-  background-color: rgb(245, 245, 229);
+  background-color: rgb(243, 243, 236);
   color: black;
 }
 
 .light-mode #project-container {
-  background-color: rgb(245, 245, 229);
+  background-color: rgb(243, 243, 236);
   color: black;
 }
 
-.light-mode #project2 {
-  background-color: rgb(245, 245, 229);
+.light-mode #about-me-container {
+  background-color: rgb(243, 243, 236);
   color: black;
 }
 
-.light-mode #project3 {
-  background-color: rgb(245, 245, 229);
-  color: black;
-}
+
 /* Switch Styling */
-
 /* The switch - the box around the slider */
 .switch {
     font-size: 17px;
@@ -116,6 +108,7 @@
     height: 28px;
     margin-top: 2px;
     margin-bottom: 4px;
+    margin-right: 5px;
   }
   
 /* Hide default HTML checkbox */

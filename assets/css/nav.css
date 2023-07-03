@@ -9,8 +9,7 @@ ul {
     border-width:1px 0;
     list-style:none;
     text-align:center;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin: 5px;
 }
 
 .nav-li {

@@ -1,3 +1,7 @@
+* {
+    margin: 0;
+}
+
 body{
     min-height: 100vh;
     display: flex;
@@ -6,7 +10,7 @@ body{
 
 .container {
     display:flex;
-    height: 100vh;
+    height: auto;
     justify-content: space-between;
 }
 
@@ -27,24 +31,33 @@ body{
     text-align: left;
 }
 
+
 h1 {
     font-family: 'Roboto', 'sans-serif', 'Courier New', Courier, monospace;
     font-weight: 700;
     font-size: 40px;
     text-align: end;
+    margin: 5px;
+}
+
+h2 {
+    font-family: 'Roboto', 'sans-serif', 'Courier New', Courier, monospace;
+    font-weight: 700;
+    font-size: 30px;
 }
 
 p {
     font-family: 'Roboto', 'sans-serif', 'Courier New', Courier, monospace;
     font-weight: 400;
-    font-size: large;
+    font-size: larger;
+    margin: 5px;
 }
 
 /* Breakpoints */
 @media only screen and (min-width: 481px) and (max-width: 1007px) {
     .container {
         display:flex;
-        height: 500px;
+        /* height: 500px; */
     }
     .nav-a {
         display:inline-block;
@@ -68,12 +81,23 @@ p {
         align-items: center;
         justify-content: space-between;
     }
+
+    .btn-wrapper-tech {
+        font-size: 14px;
+    }
+
+    .btn-wrapper-tech {
+        padding: 5px !important;
+        width: 70px !important;;
+        margin: 5px !important;;
+    }
+
 }
 
 @media only screen and (max-width: 480px) {
     .container {
         flex-direction: column;
-        height: 500px;
+        /* height: 500px; */
     }
     .nav-a {
         display:inline-block;
@@ -105,20 +129,56 @@ p {
         align-items: center;
         justify-content: space-between;
     }
+
+    .btn-wrapper-tech {
+        font-size: 14px;
+    }
+
+    .btn-wrapper-tech {
+        padding: 5px !important;
+        width: 70px !important;;
+        margin: 5px !important;;
+    }
+
+    
 }
 
 
 .skip-to-content-link {
-    background: #f1d639;
-    height: 40px;
+    background: #f1a739;
+    height: 30px;
     width: auto;  
     left: 70%;
     padding: 10px;
     position: absolute;
     transform: translateY(-200%);
     transition: transform 0.3s;
+    font-family: 'Roboto', 'sans-serif', 'Courier New', Courier, monospace;
+    font-weight: 400;
+    font-size: medium;
 }
   
 .skip-to-content-link:focus{
     transform: translateY(0%);
+}
+
+.footer {
+    margin-top: auto;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-image: linear-gradient(to right, #20DD88, #F9C486);
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.credits {
+    font-family: 'Roboto', 'sans-serif', 'Courier New', Courier, monospace;
+    font-weight: 400;
+    font-size:large;
+    display: inline;
 }
