@@ -1,5 +1,8 @@
 
 /* Mode Styling - Dark */
+.dark-mode h1::before{
+    background-color: #4451C3;
+}
 
 .dark-mode {
     background-color: rgb(27, 26, 26);
@@ -46,6 +49,10 @@
 
 
 /* Mode Styling - Light */
+
+.light-mode h1::before{
+  background-color: #20DD88;
+}
 
 .light-mode {
     background-color: rgb(252, 252, 238);

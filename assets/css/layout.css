@@ -42,8 +42,6 @@ h1 {
 }
 
 h1::before{
-    background-color: #20DD88;
-
     content: "";
     position: absolute;
     width: calc(100% + 4px);
