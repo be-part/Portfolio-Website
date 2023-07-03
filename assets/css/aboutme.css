@@ -1,21 +1,24 @@
-
-.footer {
-    margin-top: auto;
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 0;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-image: linear-gradient(to right, #BA69E1, #2C4CBD);
-    text-align: center;
-    padding-top: 5px;
-    padding-bottom: 5px;
+.border-wrap1 {
+    max-width: 700px;
+    position: relative;
+    background: linear-gradient(to right, #20DD88, #F9C486);
+    padding: 1px;
+    border-radius: 8px;
+    margin: 14px;
 }
 
-.credits {
-    font-family: 'Roboto', 'sans-serif', 'Courier New', Courier, monospace;
-    font-weight: 400;
-    font-size:x-large;
-    display: inline;
+#about-me-container {
+    padding: 12px;
+    margin: 2px;
+    max-width: 900px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.about-me-headings {
+    color: #5955C8;
+    font-size: 25px;
+    font-style: italic;
 }
