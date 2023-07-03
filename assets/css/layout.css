@@ -45,11 +45,11 @@ h1::before{
     content: "";
     position: absolute;
     width: calc(100% + 4px);
-    height: 60%;
+    height: 35%;
     left: -2px;
     bottom: 0;
     z-index: -1;
-    transform: rotate(-2deg);
+    transform: rotate(-1deg);
 }
 
 h2 {
