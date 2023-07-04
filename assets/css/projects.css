@@ -104,11 +104,11 @@
     color: rgb(255, 255, 255);
     font-size: 20px;
     border-color: #eec739;
-    border-width: 3px;
+    border-width: 2px;
     border-style: solid;
     outline: none;
     cursor: pointer;
-    width: 120px;
+    width: 110px;
     border-radius: 10px;
     text-align: center;
     margin: 5px;
@@ -119,7 +119,7 @@
 .btn-wrapper1:hover {
     background: #ffffff;
     border-color: #eec739;
-    border-width: 3px;
+    border-width: 2px;
     border-style: solid;
     color:#eec739;
     font-weight:bold;
@@ -161,11 +161,11 @@
     color: rgb(255, 255, 255);
     font-size: 20px;
     border-color: #BA69E1;
-    border-width: 3px;
+    border-width: 2px;
     border-style: solid;
     outline: none;
     cursor: pointer;
-    width: 120px;
+    width: 110px;
     border-radius: 10px;
     text-align: center;
     margin: 5px;
@@ -176,7 +176,7 @@
 .btn-wrapper2:hover {
     background: #ffffff;
     border-color: #BA69E1;
-    border-width: 3px;
+    border-width: 2px;
     border-style: solid;
     color:#BA69E1;
     font-weight:bold;
@@ -218,11 +218,11 @@
     color: rgb(255, 255, 255);
     font-size: 20px;
     border-color: #1aac6a;
-    border-width: 3px;
+    border-width: 2px;
     border-style: solid;
     outline: none;
     cursor: pointer;
-    width: 120px;
+    width: 110px;
     border-radius: 10px;
     text-align: center;
     margin: 5px;
@@ -233,7 +233,7 @@
 .btn-wrapper3:hover {
     background: #ffffff;
     border-color: #1aac6a;
-    border-width: 3px;
+    border-width: 2px;
     border-style: solid;
     color:#1aac6a;
     font-weight:bold;
