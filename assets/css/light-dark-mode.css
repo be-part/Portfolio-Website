@@ -2,6 +2,7 @@
 /* Mode Styling - Dark */
 .dark-mode h1::before{
     background-color: #2D4CBD;
+    transition: 0.3s;
 }
 
 .dark-mode {
@@ -15,6 +16,17 @@
 
 .dark-mode .nav-a {
     color:rgb(255, 255, 255)
+}
+
+.dark-mode .nav-a:hover {
+  color:#2D4CBD;
+  transition: 0.2s;
+}
+
+.dark-mode #active {
+  color: #2D4CBD;
+  border-bottom: 4px solid #2D4CBD;
+  transition: 0.3s;
 }
 
 .dark-mode #intro {
@@ -59,6 +71,7 @@
 
 .light-mode h1::before{
   background-color: #20DD88;
+  transition: 0.3s;
 }
 
 .light-mode {
@@ -72,6 +85,17 @@
 
 .light-mode .nav-a  {
     color:rgb(0, 0, 0)
+}
+
+.light-mode .nav-a:hover {
+  color:#20DD88;
+  transition: 0.2s;
+}
+
+.light-mode #active {
+  color: #20DD88;
+  border-bottom: 4px solid #20DD88;
+  transition: 0.3s;
 }
 
 .light-mode #intro {
@@ -118,7 +142,7 @@
     height: 28px;
     margin-top: 2px;
     margin-bottom: 4px;
-    margin-right: 5px;
+    margin-right: 20px;
     border-radius: 20px;
   }
   

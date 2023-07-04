@@ -2,6 +2,10 @@
     margin: 0;
 }
 
+html {
+    width: 100vw;
+}
+
 body{
     min-height: 100vh;
     display: flex;
@@ -174,6 +178,11 @@ p {
     .credits {
         font-size: small !important;
     }
+
+    .switch {
+        margin-right: 5px !important;
+    }
+    
 }
 
 .skip-to-content-link {
