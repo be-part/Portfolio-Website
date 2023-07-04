@@ -99,9 +99,9 @@
 /* Project 1 Styling */
 .btn-wrapper1 {
     padding: 10px;
-    background: #eec739;
+    background: #1aac6a;
     color: rgb(255, 255, 255);
-    border-color: #eec739;
+    border-color: #1aac6a;
     border-width: 2px;
     border-style: solid;
     outline: none;
@@ -116,10 +116,10 @@
 
 .btn-wrapper1:hover {
     background: #ffffff;
-    border-color: #eec739;
+    border-color: #1aac6a;
     border-width: 2px;
     border-style: solid;
-    color:#eec739;
+    color:#1aac6a;
     font-weight:bold;
 }
 
@@ -131,11 +131,11 @@
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: #F9E085;
+    background-color: #63dfa7;
     border-radius: 10px;
     border-style: solid;
     border-width: 1px;
-    border-color: #f1ce50;
+    border-color: #1aac6a;
   }
 
 
@@ -146,7 +146,7 @@
 .border-wrap1{
         max-width: 800px;
         position: relative;
-        background: linear-gradient(to right, #F9E085, #FF6CCA);
+        background: linear-gradient(to right, #20DD88, #F9E085);
         padding: 1px;
         border-radius: 8px;
         margin: 14px;
@@ -155,9 +155,9 @@
 /* Project 2 Styling */
 .btn-wrapper2 {
     padding: 10px;
-    background: #BA69E1;
+    background: #2C4CBD;
     color: rgb(255, 255, 255);
-    border-color: #BA69E1;
+    border-color: #2C4CBD;
     border-width: 2px;
     border-style: solid;
     outline: none;
@@ -172,10 +172,10 @@
 
 .btn-wrapper2:hover {
     background: #ffffff;
-    border-color: #BA69E1;
+    border-color: #2C4CBD;
     border-width: 2px;
     border-style: solid;
-    color:#BA69E1;
+    color:#2C4CBD;
     font-weight:bold;
 }
 
@@ -187,11 +187,11 @@
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: #ca90e6;
+    background-color: #475eb1;
     border-radius: 10px;
     border-style: solid;
     border-width: 1px;
-    border-color: #BA69E1;
+    border-color: #2C4CBD;
   }
 
 
@@ -208,12 +208,12 @@
     margin: 14px;
 }
 
-/* Project 2 Styling */
+/* Project 3 Styling */
 .btn-wrapper3 {
     padding: 10px;
-    background: #1aac6a;
+    background: #f1ce50;
     color: rgb(255, 255, 255);
-    border-color: #1aac6a;
+    border-color: #f1ce50;
     border-width: 2px;
     border-style: solid;
     outline: none;
@@ -228,10 +228,10 @@
 
 .btn-wrapper3:hover {
     background: #ffffff;
-    border-color: #1aac6a;
+    border-color: #f1ce50;
     border-width: 2px;
     border-style: solid;
-    color:#1aac6a;
+    color:#f1ce50;
     font-weight:bold;
 }
 
@@ -243,11 +243,11 @@
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: #63dfa7;
+    background-color: #F9E085;
     border-radius: 10px;
     border-style: solid;
     border-width: 1px;
-    border-color: #20DD88
+    border-color: #f1ce50
   }
 
 
@@ -258,7 +258,7 @@
 .border-wrap3 {
     max-width: 800px;
     position: relative;
-    background: linear-gradient(to right, #20DD88, #F9E085);
+    background: linear-gradient(to right, #F9E085, #FF6CCA);
     padding: 1px;
     border-radius: 8px;
     margin: 14px;
