@@ -108,8 +108,8 @@
     border-style: solid;
     outline: none;
     cursor: pointer;
-    width: 110px;
-    border-radius: 10px;
+    width: 115px;
+    border-radius: 8px;
     text-align: center;
     margin: 5px;
     overflow: hidden;
@@ -165,8 +165,8 @@
     border-style: solid;
     outline: none;
     cursor: pointer;
-    width: 110px;
-    border-radius: 10px;
+    width: 115px;
+    border-radius: 8px;
     text-align: center;
     margin: 5px;
     overflow: hidden;
@@ -222,8 +222,8 @@
     border-style: solid;
     outline: none;
     cursor: pointer;
-    width: 110px;
-    border-radius: 10px;
+    width: 115px;
+    border-radius: 8px;
     text-align: center;
     margin: 5px;
     overflow: hidden;
