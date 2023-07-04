@@ -99,7 +99,7 @@
 
 /* Project 1 Styling */
 .btn-wrapper1 {
-    padding: 15px;
+    padding: 10px;
     background: #eec739;
     color: rgb(255, 255, 255);
     font-size: 20px;
@@ -108,7 +108,7 @@
     border-style: solid;
     outline: none;
     cursor: pointer;
-    width: 140px;
+    width: 120px;
     border-radius: 10px;
     text-align: center;
     margin: 5px;
@@ -156,7 +156,7 @@
 
 /* Project 2 Styling */
 .btn-wrapper2 {
-    padding: 15px;
+    padding: 10px;
     background: #BA69E1;
     color: rgb(255, 255, 255);
     font-size: 20px;
@@ -165,7 +165,7 @@
     border-style: solid;
     outline: none;
     cursor: pointer;
-    width: 140px;
+    width: 120px;
     border-radius: 10px;
     text-align: center;
     margin: 5px;
@@ -213,7 +213,7 @@
 
 /* Project 2 Styling */
 .btn-wrapper3 {
-    padding: 15px;
+    padding: 10px;
     background: #1aac6a;
     color: rgb(255, 255, 255);
     font-size: 20px;
@@ -222,7 +222,7 @@
     border-style: solid;
     outline: none;
     cursor: pointer;
-    width: 140px;
+    width: 120px;
     border-radius: 10px;
     text-align: center;
     margin: 5px;
