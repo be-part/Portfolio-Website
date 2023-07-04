@@ -39,7 +39,7 @@ body{
 h1 {
     font-family: 'Roboto', 'sans-serif', 'Courier New', Courier, monospace;
     font-weight: 400;
-    font-size: 40px;
+    font-size: 30px;
     text-align: end;
     margin: 5px;
     position: relative;
@@ -65,7 +65,7 @@ h2 {
 p {
     font-family: 'Roboto', 'sans-serif', 'Courier New', Courier, monospace;
     font-weight: 400;
-    font-size: larger;
+    font-size: large;
     margin: 5px;
 }
 
