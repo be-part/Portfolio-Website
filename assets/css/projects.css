@@ -63,7 +63,7 @@
 
 /* Project links */
 .text-container a {
-    font-family: 'Roboto', 'sans-serif', 'Courier New', Courier, monospace;
+    font-family: 'Roboto Slab', 'sans-serif', 'Courier New', Courier, monospace;
     font-size: 16px;
     display: inline-block;
     text-align: center;
@@ -92,16 +92,16 @@
     margin: 5px;
     overflow: hidden;
     display: inline-block;
-    font-family: 'Roboto', 'sans-serif', 'Courier New', Courier, monospace;
+    font-family: 'Roboto Slab', 'sans-serif', 'Courier New', Courier, monospace;
     font-weight: 400;
 }
 
 /* Project 1 Styling */
 .btn-wrapper1 {
     padding: 10px;
-    background: #1aac6a;
+    background: #00234B;
     color: rgb(255, 255, 255);
-    border-color: #1aac6a;
+    border-color: #00234B;
     border-width: 2px;
     border-style: solid;
     outline: none;
@@ -116,10 +116,10 @@
 
 .btn-wrapper1:hover {
     background: #ffffff;
-    border-color: #1aac6a;
+    border-color: #00234B;
     border-width: 2px;
     border-style: solid;
-    color:#1aac6a;
+    color:#00234B;
     font-weight:bold;
 }
 
@@ -131,22 +131,22 @@
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: #63dfa7;
+    background-color: #00234B;
     border-radius: 10px;
     border-style: solid;
     border-width: 1px;
-    border-color: #1aac6a;
+    border-color: #00234B;
   }
 
 
 .image-container:hover .overlay1 {
-        opacity: 0.9;
+        opacity: 0.95;
 }
 
 .border-wrap1{
         max-width: 800px;
         position: relative;
-        background: linear-gradient(to right, #20DD88, #F9E085);
+        background: linear-gradient(to right, #8a241d, #00234B);
         padding: 1px;
         border-radius: 8px;
         margin: 14px;
@@ -155,9 +155,9 @@
 /* Project 2 Styling */
 .btn-wrapper2 {
     padding: 10px;
-    background: #2C4CBD;
+    background: #8f6077;
     color: rgb(255, 255, 255);
-    border-color: #2C4CBD;
+    border-color: #8f6077;
     border-width: 2px;
     border-style: solid;
     outline: none;
@@ -172,10 +172,10 @@
 
 .btn-wrapper2:hover {
     background: #ffffff;
-    border-color: #2C4CBD;
+    border-color: #8f6077;
     border-width: 2px;
     border-style: solid;
-    color:#2C4CBD;
+    color:#8f6077;
     font-weight:bold;
 }
 
@@ -187,22 +187,22 @@
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: #475eb1;
+    background-color: #94657d;
     border-radius: 10px;
     border-style: solid;
     border-width: 1px;
-    border-color: #2C4CBD;
+    border-color: #8f6077;
   }
 
 
 .image-container:hover .overlay2 {
-        opacity: 0.9;
+        opacity: 0.95;
 }
 
 .border-wrap2{
     max-width: 800px;
     position: relative;
-    background: linear-gradient(to right, #BA69E1, #2C4CBD);
+    background: linear-gradient(to right, #D2A540, #8f6077);
     padding: 1px;
     border-radius: 8px;
     margin: 14px;
@@ -211,9 +211,9 @@
 /* Project 3 Styling */
 .btn-wrapper3 {
     padding: 10px;
-    background: #f1ce50;
+    background: #0E3523;
     color: rgb(255, 255, 255);
-    border-color: #f1ce50;
+    border-color: #0E3523;
     border-width: 2px;
     border-style: solid;
     outline: none;
@@ -228,10 +228,10 @@
 
 .btn-wrapper3:hover {
     background: #ffffff;
-    border-color: #f1ce50;
+    border-color: #0E3523;
     border-width: 2px;
     border-style: solid;
-    color:#f1ce50;
+    color:#0E3523;
     font-weight:bold;
 }
 
@@ -243,22 +243,22 @@
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: #F9E085;
+    background-color: #0E3523;
     border-radius: 10px;
     border-style: solid;
     border-width: 1px;
-    border-color: #f1ce50
+    border-color: #0E3523;
   }
 
 
 .image-container:hover .overlay3 {
-        opacity: 0.9;
+        opacity: 0.95;
 }
 
 .border-wrap3 {
     max-width: 800px;
     position: relative;
-    background: linear-gradient(to right, #F9E085, #FF6CCA);
+    background: linear-gradient(to right, #453F7E,#0E3523 );
     padding: 1px;
     border-radius: 8px;
     margin: 14px;

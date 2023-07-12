@@ -38,8 +38,8 @@ body{
 
 
 h1 {
-    font-family: 'Roboto', 'sans-serif', 'Courier New', Courier, monospace;
-    font-weight: 400;
+    font-family: 'Roboto Slab', 'sans-serif', 'Courier New', Courier, monospace;
+    font-weight: 500;
     font-size: 35px;
     text-align: end;
     margin: 5px;
@@ -54,17 +54,17 @@ h1::before{
     left: -2px;
     bottom: 0;
     z-index: -1;
-    transform: rotate(-1deg);
+    transform: rotate(-5deg);
 }
 
 h2 {
-    font-family: 'Roboto', 'sans-serif', 'Courier New', Courier, monospace;
+    font-family: 'Roboto Slab', 'sans-serif', 'Courier New', Courier, monospace;
     font-weight: 700;
     font-size: 30px;
 }
 
 p {
-    font-family: 'Roboto', 'sans-serif', 'Courier New', Courier, monospace;
+    font-family: 'Roboto Slab', 'sans-serif', 'Courier New', Courier, monospace;
     font-weight: 400;
     font-size: medium;
     margin: 5px;
@@ -88,6 +88,7 @@ p {
 
     p {
         font-size: medium;
+        
     }
     #project-container {
         flex-direction: column;
@@ -195,7 +196,7 @@ p {
     position: absolute;
     transform: translateY(-200%);
     transition: transform 0.3s;
-    font-family: 'Roboto', 'sans-serif', 'Courier New', Courier, monospace;
+    font-family: 'Roboto Slab', 'sans-serif', 'Courier New', Courier, monospace;
     font-weight: 400;
     font-size: medium;
 }
@@ -212,14 +213,14 @@ p {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-image: linear-gradient(to right, #20DD88, #F9C486);
+    background-image: linear-gradient(to right, #9D6D85, #D2A540);
     text-align: center;
     padding-top: 5px;
     padding-bottom: 5px;
 }
 
 .credits {
-    font-family: 'Roboto', 'sans-serif', 'Courier New', Courier, monospace;
+    font-family: 'Roboto Slab', 'sans-serif', 'Courier New', Courier, monospace;
     font-weight: 400;
     font-size:medium;
     display: inline;

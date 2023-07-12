@@ -11,9 +11,9 @@
 
 .caption {
     display: block;
-    font-family: 'Roboto', 'sans-serif', 'Courier New', Courier, monospace;
+    font-family: 'Roboto Slab', 'sans-serif', 'Courier New', Courier, monospace;
     font-weight: 400;
-    color:#BA69E1;
+    color:#9D6D85;
 }
 
 form input, form textarea {
@@ -24,7 +24,7 @@ form input, form textarea {
     box-sizing: border-box;
     resize: vertical;
     background: #ffffff;
-    border-color: #20DD88;
+    border-color: #9D6D85;
     border-width: 3px;
     border-style: solid;
 }
@@ -32,7 +32,7 @@ form input, form textarea {
 form input:focus,
 form textarea:focus {
     outline: none !important;
-    border-color: #F9C486 !important;
+    border-color: #D2A540 !important;
     border-width: 3px;
     border-style: solid;
 }
@@ -43,7 +43,7 @@ input::placeholder {
 }
 
 form label {
-    font-family: 'Roboto', 'sans-serif', 'Courier New', Courier, monospace;
+    font-family: 'Roboto Slab', 'sans-serif', 'Courier New', Courier, monospace;
     font-weight: 400;
     display: block;
 }
@@ -58,7 +58,7 @@ form label {
 .border-wrap1 {
     max-width: 700px;
     position: relative;
-    background: linear-gradient(to right, #20DD88, #F9C486);
+    background: linear-gradient(to right, #9D6D85, #D2A540);
     padding: 1px;
     border-radius: 8px;
     margin: 14px;
@@ -66,11 +66,11 @@ form label {
 
 form button {
     padding: 15px;
-    background: #20DD88;
+    background: #D2A540;
     color: white;
     font-size: 20px;
     font-weight:bold;
-    border-color: #20DD88;
+    border-color: #D2A540;
     border-width: 3px;
     border-style: solid;
     outline: none;
@@ -82,8 +82,8 @@ form button {
 
 form button:hover {
     background: #ffffff;
-    border-color: #20DD88;
+    border-color: #D2A540;
     border-width: 3px;
     border-style: solid;
-    color:#20DD88;
+    color:#D2A540;
 }

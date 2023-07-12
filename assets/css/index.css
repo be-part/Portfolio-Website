@@ -27,7 +27,7 @@
 .border-wrap1{
         max-width: 700px;
         position: relative;
-        background: linear-gradient(to right, #20DD88, #F9C486);
+        background: linear-gradient(to right, #00234B, #8a241d);
         padding: 1px;
         border-radius: 8px;
         margin: 10px;
@@ -43,7 +43,7 @@
 .border-wrap2{
         max-width: 700px;
         position: relative;
-        background: linear-gradient(to right, #BA69E1, #2C4CBD);
+        background: linear-gradient(to right, #8f6077, #D2A540);
         padding: 1px;
         border-radius: 8px;
         margin: 10px;
@@ -63,7 +63,7 @@
 .border-wrap3 {
     max-width: 700px;
     position: relative;
-    background: linear-gradient(to right, #F9E085, #FF6CCA);
+    background: linear-gradient(to right, #0E3523, #453F7E);
     padding: 1px;
     border-radius: 8px;
     margin: 10px;
