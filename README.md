@@ -20,7 +20,7 @@ I used @media to help with the responsive web design, enabled skip to content li
 
 ## Link to deployed version
 
-https://bronwyn-elizabeth.netlify.app/
+https://bronwyn-elizabeth.com
 
 
 ## Cloning
