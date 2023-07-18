@@ -55,6 +55,7 @@ h1::before{
     bottom: 0;
     z-index: -1;
     transform: rotate(-5deg);
+    opacity: 0.8;
 }
 
 h2 {
@@ -213,7 +214,7 @@ p {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-image: linear-gradient(to right, #9D6D85, #D2A540);
+    background-image: linear-gradient(to right, #202d41, #D2A540);
     text-align: center;
     padding-top: 5px;
     padding-bottom: 5px;
