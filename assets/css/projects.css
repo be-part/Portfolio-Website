@@ -160,11 +160,11 @@
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: #293b55;
+    background-color: #314664;
     border-radius: 10px;
     border-style: solid;
     border-width: 1px;
-    border-color: #293b55;
+    border-color: #314664;
   }
 
 
@@ -175,7 +175,7 @@
 .border-wrap1 {
     max-width: 800px;
     position: relative;
-    background: linear-gradient(to right, #293b55, #D2A540);
+    background: linear-gradient(to right, #314664, #D2A540);
     padding: 1px;
     border-radius: 8px;
     margin: 14px;
@@ -190,11 +190,11 @@
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: #293b55;
+    background-color: #314664;
     border-radius: 10px;
     border-style: solid;
     border-width: 1px;
-    border-color: #293b55;
+    border-color: #314664;
   }
 
 
@@ -205,7 +205,7 @@
 .border-wrap2 {
     max-width: 800px;
     position: relative;
-    background: linear-gradient(to right,  #D2A540, #293b55);
+    background: linear-gradient(to right,  #D2A540, #314664);
     padding: 1px;
     border-radius: 8px;
     margin: 14px;
