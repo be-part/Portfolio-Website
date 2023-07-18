@@ -1,7 +1,7 @@
 
 /* Mode Styling - Dark */
 .dark-mode h1::before{
-    background-color: #26364e;
+    background-color: #293b55;
     transition: 0.3s;
 }
 
@@ -19,13 +19,13 @@
 }
 
 .dark-mode .nav-a:hover {
-  color:#26364e;
+  color:#293b55;
   transition: 0.2s;
 }
 
 .dark-mode #active {
-  color: #26364e;
-  border-bottom: 4px solid #26364e;
+  color: #293b55;
+  border-bottom: 4px solid #293b55;
   transition: 0.3s;
 }
 
