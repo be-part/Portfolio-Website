@@ -43,7 +43,7 @@
 .border-wrap2{
         max-width: 700px;
         position: relative;
-        background: linear-gradient(to right, #684656, #0E3523);
+        background: linear-gradient(to right,  #D2A540, #202d41);
         padding: 1px;
         border-radius: 8px;
         margin: 10px;
@@ -63,7 +63,7 @@
 .border-wrap3 {
     max-width: 700px;
     position: relative;
-    background: linear-gradient(to right, #943939, #E3670C);
+    background: linear-gradient(to right, #202d41, #D2A540);
     padding: 1px;
     border-radius: 8px;
     margin: 10px;

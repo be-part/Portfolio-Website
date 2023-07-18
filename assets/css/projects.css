@@ -150,33 +150,38 @@
 }
 
 
-/* Project 2 Styling */
-.btn-wrapper2 {
-    padding: 10px;
-    background: #0E3523;
-    color: rgb(255, 255, 255);
-    border-color: #0E3523;
-    border-width: 2px;
+/* Project Styling 1*/
+
+.overlay1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #202d41;
+    border-radius: 10px;
     border-style: solid;
-    outline: none;
-    cursor: pointer;
-    width: 115px;
-    border-radius: 8px;
-    text-align: center;
-    margin: 5px;
-    overflow: hidden;
-    white-space: nowrap;
+    border-width: 1px;
+    border-color: #202d41;
   }
 
-.btn-wrapper2:hover {
-    background: #ffffff;
-    border-color: #0E3523;
-    border-width: 2px;
-    border-style: solid;
-    color:#0E3523;
-    font-weight:bold;
+
+.image-container:hover .overlay1 {
+        opacity: 0.95;
 }
 
+.border-wrap1 {
+    max-width: 800px;
+    position: relative;
+    background: linear-gradient(to right, #202d41, #D2A540);
+    padding: 1px;
+    border-radius: 8px;
+    margin: 14px;
+}
+
+/* Project Styling  2*/
 .overlay2 {
     position: absolute;
     top: 0;
@@ -185,11 +190,11 @@
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: #684656;
+    background-color: #202d41;
     border-radius: 10px;
     border-style: solid;
     border-width: 1px;
-    border-color: #0E3523;
+    border-color: #202d41;
   }
 
 
@@ -200,63 +205,7 @@
 .border-wrap2 {
     max-width: 800px;
     position: relative;
-    background: linear-gradient(to right, #684656, #0E3523);
-    padding: 1px;
-    border-radius: 8px;
-    margin: 14px;
-}
-
-/* Project 3 Styling */
-.btn-wrapper3 {
-    padding: 10px;
-    background: #0E3523;
-    color: rgb(255, 255, 255);
-    border-color: #0E3523;
-    border-width: 2px;
-    border-style: solid;
-    outline: none;
-    cursor: pointer;
-    width: 115px;
-    border-radius: 8px;
-    text-align: center;
-    margin: 5px;
-    overflow: hidden;
-    white-space: nowrap;
-  }
-
-.btn-wrapper3:hover {
-    background: #ffffff;
-    border-color: #0E3523;
-    border-width: 2px;
-    border-style: solid;
-    color:#0E3523;
-    font-weight:bold;
-}
-
-.overlay3 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #684656;
-    border-radius: 10px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #0E3523;
-  }
-
-
-.image-container:hover .overlay3 {
-        opacity: 0.95;
-}
-
-.border-wrap3 {
-    max-width: 800px;
-    position: relative;
-    background: linear-gradient(to right, #0E3523, #684656);
+    background: linear-gradient(to right,  #D2A540, #202d41);
     padding: 1px;
     border-radius: 8px;
     margin: 14px;

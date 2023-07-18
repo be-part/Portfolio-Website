@@ -1,7 +1,7 @@
 .border-wrap1 {
     max-width: 700px;
     position: relative;
-    background: linear-gradient(to right, #0E3523, #684656);
+    background: linear-gradient(to right, #202d41, #D2A540);
     padding: 1px;
     border-radius: 8px;
     margin: 14px;
@@ -18,7 +18,7 @@
 }
 
 .about-me-headings {
-    color: #9D6D85;
+    color: #847040;
     font-size: 25px;
     font-style: italic;
 }
