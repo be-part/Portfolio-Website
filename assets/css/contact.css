@@ -24,7 +24,7 @@ form input, form textarea {
     box-sizing: border-box;
     resize: vertical;
     background: #ffffff;
-    border-color: #202d41;
+    border-color: #293b55;
     border-width: 3px;
     border-style: solid;
 }
@@ -58,7 +58,7 @@ form label {
 .border-wrap1 {
     max-width: 700px;
     position: relative;
-    background: linear-gradient(to right, #202d41, #D2A540);
+    background: linear-gradient(to right, #293b55, #D2A540);
     padding: 1px;
     border-radius: 8px;
     margin: 14px;
