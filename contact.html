@@ -8,9 +8,6 @@
     <link rel="stylesheet" type="text/css" href="../assets/css/layout.css" />
     <link rel="stylesheet" type="text/css" href="../assets/css/light-dark-mode.css" />
     <link rel="stylesheet" type="text/css" href="../assets/css/contact.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" href="./assets/icons/plant-icon.png">
     <style>
         .hidden {
@@ -99,7 +96,7 @@
             <div class="typewriter">
             <h1> Contact me:</h1> 
             </div>
-            <p> Send me a message here or check out my social media.🌿</p>
+            <p class="projects-text"> Send me a message here or check out my social media.</p>
             <div class="hyperlinked-icons">
 
                 <div class="item">
@@ -117,7 +114,16 @@
 
         
         <div class="box2">
-            <div class="border-wrap1">
+            <div class="main-container">
+                <div class="box-header">
+                    <p> Project1: House_of_Games </p>
+                    <div style="display:flex; padding-right:10px; align-items: center;">
+                    <img src="./assets/window-icons/maximize.png" alt="maximize window icon" />
+                    <img src="./assets/window-icons/minimize.png" alt="minimize window icon" />
+                    <img src="./assets/window-icons/close-window.png" alt="close window icon" />
+                    </div>
+                </div>
+            <div class="border-wrap">
 
                 <form id="form-container" 
                 name="contact" 
@@ -137,14 +143,14 @@
                     </p>
                     <div data-netlify-recaptcha="true"></div>
                     <p>
-                      <button type="submit">Send</button>
+                      <button class="btn-wrapper2" type="submit">Send</button>
                     </p>
                   </form>
 
             </div>
         </div>
         </div>
-        
+    </div> 
     </div>
     </main>
 

@@ -41,10 +41,12 @@ body{
     justify-content: center;
     align-items: center; 
     position: relative; 
+    margin: 10px;
   }
 
   h1 {
     font-size: 80px;
+    margin: 5px;
   }
 
 h2 {
@@ -87,10 +89,6 @@ p {
         justify-content: space-between;
     }
 
-    .text {
-        font-size: 16px !important;
-    }
-
     .btn-wrapper-tech {
         padding: 5px !important;
         width: 90px !important;;
@@ -104,6 +102,11 @@ p {
     .box-header p {
         font-size: 14px;
     }
+
+    .main-container {
+        max-width: 90%;
+    }
+
 }
 
 @media only screen and (max-width: 480px) {
@@ -137,10 +140,7 @@ p {
         align-items: center;
         justify-content: space-between;
     }
-
-    .text {
-        font-size: 16px !important;
-    }
+    
 
     .btn-wrapper-tech {
         padding: 5px !important;
@@ -180,8 +180,14 @@ p {
     }
 
     .box-header p {
-        font-size: 13px;
+        padding-left: 12px !important; 
+        font-size: 12px;
     }
+
+    .main-container {
+        max-width: 90%;
+    }
+  
     
 }
 

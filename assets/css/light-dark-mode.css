@@ -1,7 +1,7 @@
 
 /* Mode Styling - Dark */
 .dark-mode .typewriter h1 {
-  color: #fff;
+  color: #FFF;
 }
 
 .dark-mode {
@@ -18,13 +18,13 @@
 }
 
 .dark-mode .nav-a:hover {
-  color: #A558A4;
+  color: #42FEFF;
   transition: 0.2s;
 }
 
 .dark-mode #active {
-  color: #A558A4;
-  border-bottom: 4px solid #A558A4;
+  color: #42FEFF;
+  border-bottom: 4px solid #42FEFF;
   transition: 0.3s;
 }
 
@@ -74,11 +74,26 @@
   box-shadow: 5px 5px white;
 }
 
+.dark-mode .box-header {
+  background: linear-gradient(to right, #662C92, #42FEFF);
+}
+
+.dark-mode .border-wrap {
+  background: linear-gradient(to right, #662C92, #42FEFF);
+}
+
+.dark-mode .about-me-headings {
+  color: #F9FB74;
+}
+
+.dark-mode .credits {
+  color: #FFFFFF;
+}
+
 /* Mode Styling - Light */
 
 .light-mode .typewriter h1 {
   color: #000;
-  border-right: .15em solid #D2A441;
 }
 
 .light-mode {
@@ -140,8 +155,13 @@
 }
 
 .light-mode .XL-text {
-  color: #b0e5f1;
-  text-shadow: 0px 0px 21px #027ea3;
+  color: #ffffff;
+  text-shadow: 0px 0px 21px rgba(0, 0, 0, 0.753);
+}
+
+.light-mode .L-text {
+  color: transparent;
+    -webkit-text-stroke: 0.3px rgba(0, 0, 0, 0.497);
 }
 
 .light-mode .btn-wrapper1 {
@@ -150,6 +170,18 @@
 
 .light-mode .btn-wrapper2 {
   box-shadow: 5px 5px black;
+}
+
+.light-mode .box-header {
+  background: linear-gradient(to right,  #D2A540, #DC51D2);
+}
+
+.light-mode .border-wrap {
+  background: linear-gradient(to right,  #D2A540, #DC51D2);
+}
+
+.light-mode .about-me-headings {
+  color: #662C92;
 }
 
 

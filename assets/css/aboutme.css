@@ -1,11 +1,11 @@
 .typewriter h1 {
     color: #fff;
     font-family: monospace;
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid orange; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
+    overflow: hidden; 
+    border-right: .15em solid #F9FB74; 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: .15em; 
     animation: 
       typing 3.5s steps(25, end),
       blink-caret .8s step-end 10;
@@ -19,20 +19,49 @@
   
   @keyframes blink-caret {
     from, to { border-color: transparent }
-    50% { border-color: #084108; }
+    50% { border-color: #F9FB74; }
   }
 
-
-.border-wrap1 {
-    max-width: 700px;
-    position: relative;
-    background: linear-gradient(to right, #314664, #D2A540);
-    padding: 1px;
-    border-radius: 8px;
-    margin: 14px;
+.projects-text {
+    text-align: start;
+    margin: 20px;
+    font-family: Courier New, Courier, monospace;
 }
 
-#about-me-container {
+.main-container {
+  border-width: 4px;
+  border-style: ridge;
+  border-color: #E5F8FF;
+  border-radius: 2px;
+  box-shadow: -10px 10px;
+  margin: 10px;
+}
+
+.box-header p {
+ padding-left: 20px;
+ margin: 0;
+ font-family: Courier New, Courier, monospace;
+}
+
+.box-header img {
+  width: 30px;
+  height: 30px;
+}
+
+.box-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.border-wrap {
+  max-width: 900px;
+  position: relative;
+  padding: 1px;
+}
+
+.about-me-container {
     padding: 12px;
     margin: 2px;
     max-width: 800px;
@@ -43,7 +72,6 @@
 }
 
 .about-me-headings {
-    color: #124b30;
+    font-family: Courier New, Courier, monospace;
     font-size: 25px;
-    font-style: italic;
 }
