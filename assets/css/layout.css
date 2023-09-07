@@ -214,7 +214,8 @@ p {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-image: linear-gradient(to right, #293b55, #D2A540);
+    border:1px solid #a7abb3;
+    border-width:1px 0;
     text-align: center;
     padding-top: 5px;
     padding-bottom: 5px;
