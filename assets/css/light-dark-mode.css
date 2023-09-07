@@ -53,7 +53,7 @@
   color: rgb(255, 255, 255);
 }
 
-.dark-mode #about-me-container {
+.dark-mode .about-me-container {
   background-color: rgb(27, 26, 26);
   color: rgb(255, 255, 255);
 }
@@ -145,7 +145,7 @@
   color: black;
 }
 
-.light-mode #about-me-container {
+.light-mode .about-me-container {
   background-color: rgb(252, 252, 252);
   color: black;
 }
