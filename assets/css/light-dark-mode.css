@@ -1,8 +1,7 @@
 
 /* Mode Styling - Dark */
-.dark-mode h1::before{
-    background-color: #314664;
-    transition: 0.3s;
+.dark-mode .typewriter h1 {
+  color: #fff;
 }
 
 .dark-mode {
@@ -19,13 +18,13 @@
 }
 
 .dark-mode .nav-a:hover {
-  color:#314664;
+  color: #A558A4;
   transition: 0.2s;
 }
 
 .dark-mode #active {
-  color: #314664;
-  border-bottom: 4px solid #314664;
+  color: #A558A4;
+  border-bottom: 4px solid #A558A4;
   transition: 0.3s;
 }
 
@@ -67,11 +66,19 @@
   filter:invert(1);
 }
 
+.dark-mode .btn-wrapper1 {
+  box-shadow: 5px 5px white;
+}
+
+.dark-mode .btn-wrapper2 {
+  box-shadow: 5px 5px white;
+}
+
 /* Mode Styling - Light */
 
-.light-mode h1::before{
-  background-color: #D2A540;
-  transition: 0.3s;
+.light-mode .typewriter h1 {
+  color: #000;
+  border-right: .15em solid #D2A441;
 }
 
 .light-mode {
@@ -88,13 +95,13 @@
 }
 
 .light-mode .nav-a:hover {
-  color:#D2A540;
+  color:#DC51D1;
   transition: 0.2s;
 }
 
 .light-mode #active {
-  color: #D2A540;
-  border-bottom: 4px solid #D2A540;
+  color: #DC51D1;
+  border-bottom: 4px solid #DC51D1;
   transition: 0.3s;
 }
 
@@ -135,6 +142,14 @@
 .light-mode .XL-text {
   color: #b0e5f1;
   text-shadow: 0px 0px 21px #027ea3;
+}
+
+.light-mode .btn-wrapper1 {
+  box-shadow: 5px 5px black;
+}
+
+.light-mode .btn-wrapper2 {
+  box-shadow: 5px 5px black;
 }
 
 

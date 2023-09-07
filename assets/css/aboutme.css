@@ -7,7 +7,7 @@
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em; /* Adjust as needed */
     animation: 
-      typing 3.5s steps(30, end),
+      typing 3.5s steps(25, end),
       blink-caret .8s step-end 10;
       animation-fill-mode: forwards;
   }
@@ -19,7 +19,7 @@
   
   @keyframes blink-caret {
     from, to { border-color: transparent }
-    50% { border-color: orange; }
+    50% { border-color: #084108; }
   }
 
 
