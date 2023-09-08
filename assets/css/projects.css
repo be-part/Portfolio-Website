@@ -35,7 +35,7 @@
     border-style: ridge;
     border-color: #E5F8FF;
     border-radius: 2px;
-    box-shadow: -10px 10px;
+    box-shadow: -6px 6px;
     margin: 10px;
 }
 
@@ -43,11 +43,12 @@
    padding-left: 10px;
    margin: 0;
    font-family: Courier New, Courier, monospace;
+   font-size: 15px;
 }
 
 .box-header img {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
 }
 
 .box-header {

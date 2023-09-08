@@ -58,10 +58,15 @@ h2 {
 p {
     font-family: sans-serif, Courier New, Courier, monospace;
     font-weight: 400;
-    font-size: medium;
+    font-size: 18px;
     margin: 5px;
+    line-height: 23px;
 }
 
+.emphasis-text {
+    font-weight: bold;
+    font-size: 19px;
+}
 /* Breakpoints */
 @media only screen and (min-width: 551px) and (max-width: 800px) {
     .container {

@@ -94,6 +94,11 @@
   color: #FFFFFF;
 }
 
+.dark-mode .emphasis-text{
+  color:#F9FB74;
+}
+
+
 /* Mode Styling - Light */
 
 .light-mode .typewriter h1 {
@@ -191,6 +196,11 @@
 .light-mode .about-me-headings {
   color: #662C92;
 }
+
+.light-mode .emphasis-text{
+  color:#662C92;
+}
+
 
 
 /* Switch Styling */
