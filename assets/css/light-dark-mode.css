@@ -225,32 +225,32 @@
     transition: .4s;
     border-radius: 30px;
   }
-  
-  .slider:before {
-    position: absolute;
-    content: "";
-    height: 22px;
-    width: 22px;
-    border-radius: 20px;
-    left: 5px;
-    bottom: 3px;
-    background: linear-gradient(40deg, #d87315, #e7ac2c);
-    transition: 0.4s;
-  }
-  
-  input:checked + .slider {
-    background-color: #303136;
-  }
-  
-  input:checked + .slider:before {
-    transform:translateX(1.5em);
-    background: rgb(27, 26, 26);
-    box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -5px 0 0 #a3dafb;
-  }
 
-  .switch:hover {
-    border: 1px solid rgb(67, 107, 160);
-    border-radius: 20px;
-  }
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  border-radius: 20px;
+  right: 5px; 
+  bottom: 3px;
+  background: linear-gradient(40deg, #d87315, #e7ac2c); 
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #303136;
+}
+
+input:checked + .slider:before {
+  transform: translateX(-1.5em); 
+  background: rgb(27, 26, 26);
+  box-shadow: inset 3px 2px 5px -2px #8983f7, inset 10px 5px 0 0 #a3dafb;
+}
+
+.switch:hover {
+  border: 1px solid #42FEFF;
+  border-radius: 20px;
+}
 
 
