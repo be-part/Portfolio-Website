@@ -63,7 +63,53 @@ p {
 }
 
 /* Breakpoints */
-@media only screen and (min-width: 481px) and (max-width: 1007px) {
+@media only screen and (min-width: 551px) and (max-width: 800px) {
+    .container {
+        display:flex;
+    }
+
+    .nav-a {
+        display:inline-block;
+        padding: 4px;
+        font-size: 18px;
+    }
+    
+    h1 {
+        font-size: 55px;
+    }
+
+    p {
+        font-size: medium;
+        
+    }
+    #project-container {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .btn-wrapper-tech {
+        padding: 5px !important;
+        width: 90px !important;;
+        margin: 5px !important;;
+    }
+
+    .credits {
+        font-size: small !important;
+    }
+
+    .box-header p {
+        font-size: 14px;
+    }
+
+    .main-container {
+        max-width: 90%;
+    }
+
+}
+
+@media only screen and (min-width: 481px) and (max-width: 550px) {
     .container {
         display:flex;
     }
@@ -106,7 +152,6 @@ p {
     .main-container {
         max-width: 90%;
     }
-
 }
 
 @media only screen and (max-width: 480px) {

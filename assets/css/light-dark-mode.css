@@ -82,6 +82,10 @@
   background: linear-gradient(to right, #662C92, #42FEFF);
 }
 
+.dark-mode .border-wrap2 {
+  background: linear-gradient(to right, #662C92, #42FEFF);
+}
+
 .dark-mode .about-me-headings {
   color: #F9FB74;
 }
@@ -110,13 +114,13 @@
 }
 
 .light-mode .nav-a:hover {
-  color:#DC51D1;
+  color:#FC6F50;
   transition: 0.2s;
 }
 
 .light-mode #active {
-  color: #DC51D1;
-  border-bottom: 4px solid #DC51D1;
+  color: #FC6F50;
+  border-bottom: 4px solid #FC6F50;
   transition: 0.3s;
 }
 
@@ -173,11 +177,15 @@
 }
 
 .light-mode .box-header {
-  background: linear-gradient(to right,  #D2A540, #DC51D2);
+  background: linear-gradient(to right,  #D2A540, #FC2F75);
 }
 
 .light-mode .border-wrap {
-  background: linear-gradient(to right,  #D2A540, #DC51D2);
+  background: linear-gradient(to right,  #D2A540, #FC2F75);
+}
+
+.light-mode .border-wrap2 {
+  background: linear-gradient(to right,  #D2A540, #FC2F75);
 }
 
 .light-mode .about-me-headings {
