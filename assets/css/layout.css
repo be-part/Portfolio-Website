@@ -68,6 +68,41 @@ p {
   font-size: 19px;
 }
 
+/* Windows */
+.main-container {
+  border-width: 4px;
+  border-style: ridge;
+  border-color: #E5F8FF;
+  border-radius: 2px;
+  box-shadow: -6px 6px;
+  margin: 10px;
+}
+
+.box-header p {
+  padding-left: 10px;
+  margin: 0;
+  font-family: Courier New, Courier, monospace;
+  font-size: 15px;
+ }
+ 
+ .box-header img {
+   width: 20px;
+   height: 20px;
+ }
+ 
+ .box-header {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+ }
+ 
+ .border-wrap {
+   max-width: 900px;
+   position: relative;
+   padding: 0 1px 1px 1px;
+ }
+
 /* Social Media Links */
 .hyperlinked-icons {
     display: flex;

@@ -29,38 +29,9 @@
     font-family: Courier New, Courier, monospace;
 }
 
-/* Project container layout */
-.main-container {
-    border-width: 4px;
-    border-style: ridge;
-    border-color: #E5F8FF;
-    border-radius: 2px;
-    box-shadow: -6px 6px;
-    margin: 10px;
-}
-
-.box-header p {
-   padding-left: 10px;
-   margin: 0;
-   font-family: Courier New, Courier, monospace;
-   font-size: 15px;
-}
-
-.box-header img {
-    width: 20px;
-    height: 20px;
-}
-
-.box-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
 #project-container {
     padding: 12px;
-    margin: 2px;
+    margin: 0 2px 2px 2px;
     border-radius: 8px;
     display: flex;
     align-items: center;
@@ -86,13 +57,6 @@
 .image-container:hover .overlay {
         opacity: 0.95;
 }
-
-.border-wrap {
-    max-width: 900px;
-    position: relative;
-    padding: 1px;
-}
-
 
 /* Image styling */
 .project-imgs {
