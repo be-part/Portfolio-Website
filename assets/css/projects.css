@@ -107,7 +107,7 @@
 .image-container {
     position: relative;
     width: 50%;
-    min-width: 300px;
+    min-width: 250px;
     max-width: 350px;
     font-size: 0;
 }

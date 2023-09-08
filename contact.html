@@ -22,7 +22,8 @@
         Skip to content
     </a>
     <nav class="nav-bar">
-        <ul class="nav-list">
+        <div class="nav-container">
+        <ul class="nav-list"
             <li class="nav-li"><a class="nav-a" href="./index.html">Home</a></li>
             <li class="nav-li"><a class="nav-a" href="./projects.html">Projects</a></li>
             <li class="nav-li"><a class="nav-a" href="./aboutme.html">About Me</a></li>
@@ -30,14 +31,11 @@
         </ul>
       
         <div class="nav-right">
-          <ul>
-            <li>
-              <label class="switch" aria-label="Light/dark mode toggle">
+            <label class="switch" aria-label="Light/dark mode toggle">
                 <input type="checkbox" id="modeCheckBox">
                 <span class="slider"></span>  
-              </label>
-            </li>
-          </ul>
+            </label>
+        </div>
         </div>
       </nav>
    
@@ -92,24 +90,26 @@
     
     <main>
     <div class="container">
+
+        <div class="hyperlinked-icons">
+
+            <div class="item">
+            <a target="_blank" href="https://github.com/be-part" aria-label="GitHub link"> <img class="img-icons" src="./assets/icons/github-icon.png"  alt="neon pink and blue git hub icon"/></a>
+            <span class="caption">GitHub</span>
+            </div>
+
+            <div class="item">
+            <a target="_blank" href="https://www.linkedin.com/in/bronwyn-parton/" aria-label="LinkedIn profile for Bronwyn Parton"> <img class="img-icons" src="./assets/icons/linkedin-icon.png"  alt="neon pink and blue linked in icon"/></a>
+            <span class="caption">LinkedIn</span>
+            </div>
+
+        </div>
+
         <div class="box1"> 
             <div class="typewriter">
             <h1> Contact me:</h1> 
             </div>
             <p class="projects-text"> Send me a message here or check out my social media. </p>
-            <div class="hyperlinked-icons">
-
-                <div class="item">
-                <a target="_blank" href="https://github.com/be-part" aria-label="GitHub link"> <img src="./assets/icons/github-colour-icon.png"  alt="neon pink and blue git hub icon"/></a>
-                <span class="caption">GitHub</span>
-                </div>
-
-                <div class="item">
-                <a target="_blank" href="https://www.linkedin.com/in/bronwyn-parton/" aria-label="LinkedIn profile for Bronwyn Parton"> <img src="./assets/icons/linkedin-colour-icon.png"  alt="neon pink and blue linked in icon"/></a>
-                <span class="caption">LinkedIn</span>
-                </div>
-
-            </div>
         </div>
 
         
@@ -150,6 +150,7 @@
             </div>
         </div>
         </div>
+
     </div> 
     </div>
     </main>
