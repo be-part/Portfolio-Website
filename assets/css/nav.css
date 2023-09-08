@@ -42,4 +42,5 @@
 .nav-right {
   flex: 0 1 auto;
   margin-left: auto;
+  margin-right: 8px;
 }

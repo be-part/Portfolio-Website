@@ -28,34 +28,6 @@
     font-family: Courier New, Courier, monospace;
 }
 
-.hyperlinked-icons {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-items: center;
-  margin-left: auto;
-  z-index: 1;
-}
-
-
-.item {
-  vertical-align: top;
-  display: inline-block;
-  text-align: center;
-  margin: 5px;
-}
-
-.item img {
-    width:40px;
-    height:40px;
-}
-
-.caption {
-    display: block;
-    font-family: sans-serif, Courier New, Courier, monospace;
-    font-size: 12px;
-}
-
 form input, form textarea {
     width: 100%;
     padding: 12px;

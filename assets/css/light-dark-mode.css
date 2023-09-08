@@ -62,7 +62,7 @@
   border: 1px solid rgb(27, 26, 26);
 }
 
-.dark-mode .img-icons {
+.dark-mode #inverse {
   filter:invert(1);
 }
 

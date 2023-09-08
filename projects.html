@@ -1,282 +1,419 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="../assets/css/nav.css" />
     <link rel="stylesheet" type="text/css" href="../assets/css/layout.css" />
-    <link rel="stylesheet" type="text/css" href="../assets/css/light-dark-mode.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../assets/css/light-dark-mode.css"
+    />
     <link rel="stylesheet" type="text/css" href="../assets/css/projects.css" />
-    <link rel="icon" href="./assets/icons/sun-icon.png"> 
+    <link rel="icon" href="./assets/icons/sun-icon.png" />
     <style>
-        .hidden {
-            display: none;
-        }
+      .hidden {
+        display: none;
+      }
     </style>
     <title>Projects</title>
-</head>
-<body class="hidden">
-      
-    <a class="skip-to-content-link" href="#main">
-        Skip to content
-    </a>
+  </head>
+  <body class="hidden">
+    <a class="skip-to-content-link" href="#main"> Skip to content </a>
     <nav class="nav-bar">
-        <div class="nav-container">
-        <ul class="nav-list"
-            <li class="nav-li"><a class="nav-a" href="./index.html">Home</a></li>
-            <li class="nav-li"><a id="active" class="nav-a" href="./projects.html">Projects</a></li>
-            <li class="nav-li"><a class="nav-a" href="./aboutme.html">About Me</a></li>
-            <li class="nav-li"><a class="nav-a" href="./contact.html">Contact</a></li>
+      <div class="nav-container">
+        <ul class="nav-list">
+          <li class="nav-li"><a class="nav-a" href="./index.html">Home</a></li>
+          <li class="nav-li">
+            <a id="active" class="nav-a" href="./projects.html">Projects</a>
+          </li>
+          <li class="nav-li">
+            <a class="nav-a" href="./aboutme.html">About Me</a>
+          </li>
+          <li class="nav-li">
+            <a class="nav-a" href="./contact.html">Contact</a>
+          </li>
         </ul>
-      
+
         <div class="nav-right">
-            <label class="switch" aria-label="Light/dark mode toggle">
-                <input type="checkbox" id="modeCheckBox">
-                <span class="slider"></span>  
-            </label>
+          <label class="switch" aria-label="Light/dark mode toggle">
+            <input type="checkbox" id="modeCheckBox" />
+            <span class="slider"></span>
+          </label>
         </div>
-        </div>
-      </nav>
-   
-                
+      </div>
+    </nav>
 
     <script>
-        function setPref() {
-            document.querySelector('.switch').style.display = 'inline-block';
+      function setPref() {
+        document.querySelector(".switch").style.display = "inline-block";
 
-            if (localStorage.getItem("mode") === "dark") {
-                let element = document.body;
-                element.classList.add('dark-mode')
-                element.classList.remove('light-mode')
-                document.getElementById("modeCheckBox").checked = true;
-            } else {
-                let element = document.body;
-                element.classList.add('light-mode')
-                element.classList.remove('dark-mode')
-                document.getElementById("modeCheckBox").checked = false;
-            }
+        if (localStorage.getItem("mode") === "dark") {
+          let element = document.body;
+          element.classList.add("dark-mode");
+          element.classList.remove("light-mode");
+          document.getElementById("modeCheckBox").checked = true;
+        } else {
+          let element = document.body;
+          element.classList.add("light-mode");
+          element.classList.remove("dark-mode");
+          document.getElementById("modeCheckBox").checked = false;
         }
+      }
 
-        window.addEventListener('DOMContentLoaded', () => {
-            document.body.classList.remove('hidden');
-            setPref();
-        });
+      window.addEventListener("DOMContentLoaded", () => {
+        document.body.classList.remove("hidden");
+        setPref();
+      });
 
-        let checkBox = document.getElementById("modeCheckBox");
-        
-        checkBox.addEventListener("keydown", (e) => {
-        if( e.key === "Enter"){
-        checkBox.checked = !checkBox.checked;
-        toggleLightDark();
+      let checkBox = document.getElementById("modeCheckBox");
+
+      checkBox.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") {
+          checkBox.checked = !checkBox.checked;
+          toggleLightDark();
         }
-        });
+      });
 
-        function toggleLightDark() {
-            if (checkBox.checked) {
-                let element = document.body;
-                element.classList.add('dark-mode')
-                element.classList.remove('light-mode')
-                localStorage.setItem("mode", "dark")
-            } else {
-                let element = document.body;
-                element.classList.add('light-mode')
-                element.classList.remove('dark-mode')
-                localStorage.setItem("mode", "light")
-            }
+      function toggleLightDark() {
+        if (checkBox.checked) {
+          let element = document.body;
+          element.classList.add("dark-mode");
+          element.classList.remove("light-mode");
+          localStorage.setItem("mode", "dark");
+        } else {
+          let element = document.body;
+          element.classList.add("light-mode");
+          element.classList.remove("dark-mode");
+          localStorage.setItem("mode", "light");
         }
-        checkBox.addEventListener("change", toggleLightDark);
+      }
+      checkBox.addEventListener("change", toggleLightDark);
     </script>
-    
-  
+
     <div class="container">
-        <div class="box1"> 
-            <div class="typewriter">
-            <h1> Projects:</h1>
-            </div>
-            <p class="projects-text"> Check out some of my projects - hover over the images for more information. </p>
+      <div class="hyperlinked-icons">
+        <div class="item">
+          <a
+            target="_blank"
+            href="https://github.com/be-part"
+            aria-label="GitHub link"
+          >
+            <img
+              id="inverse"
+              src="./assets/icons/github-icon.png"
+              alt="neon pink and blue git hub icon"
+          /></a>
         </div>
 
-        <main class="box2">
-        <div class="main-container">
-            <div class="box-header">
-                <p>📂Project1: House_of_Games </p>
-                <div style="display:flex; padding-right:5px; align-items: center;">
-                <img src="./assets/window-icons/maximize.png" alt="maximize window icon" />
-                <img src="./assets/window-icons/minimize.png" alt="minimize window icon" />
-                <img src="./assets/window-icons/close-window.png" alt="close window icon" />
-                </div>
-            </div>
-            <div class="border-wrap">
-                <div id="project-container">
-                  <div class="image-container">
-                    <img class="project-imgs" src="./assets/images/snapshot-games-fe.png" alt="screenshot of the welcome page of a games review website, including a header of 'House of Games', a nav bar and a colour scheme of red, pale green and pale pink.">
-                        <div class="overlay">
-                            <div class="text">
-                    <h2>House of Games</h2> 
-                    </br>       
-                                <span class="tech-btns">
-                                <div class="btn-wrapper-tech">React</div>
-                                <div class="btn-wrapper-tech">Axios</div>
-                                <div class="btn-wrapper-tech">JavaScript</div>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="text-container">
-                    <p>
-                    A <span class="emphasis-text">front-end application</span> for board game reviews, featuring <span class="emphasis-text">search</span> and <span class="emphasis-text">filtering</span> functionalities. I've also implemented <span class="emphasis-text">user engagement</span> features, including commenting and voting. Explore my work to see the code or see the app in action.
-                    </p>
-        
-                    </br>
-                    <div>
-                    <a class="btn-wrapper1" target="_blank" href="https://bp-house-of-games.netlify.app/" >View live</a>
-                    <a class="btn-wrapper2" target="_blank" href="https://github.com/be-part/BP-NC-Games-Frontend" >View on GitHub</a>
-                    </div>
-                    </div>
-
-                </div>
-            </div>
+        <div class="item">
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/bronwyn-parton/"
+            aria-label="LinkedIn profile for Bronwyn Parton"
+          >
+            <img
+              id="inverse"
+              src="./assets/icons/linkedin-icon.png"
+              alt="neon pink and blue linked in icon"
+          /></a>
         </div>
-            
+      </div>
+
+      <div class="box1">
+        <div class="typewriter">
+          <h1>Projects:</h1>
+        </div>
+        <p class="projects-text">
+          Check out some of my projects - hover over the images for more
+          information.
+        </p>
+      </div>
+
+      <main class="box2">
         <div class="main-container">
-            <div class="box-header">
-                <p>📂Project2: House_of_Games_API  </p>
-                <div style="display:flex; padding-right:5px; align-items: center;">
-                <img src="./assets/window-icons/maximize.png" alt="maximize window icon" />
-                <img src="./assets/window-icons/minimize.png" alt="minimize window icon" />
-                <img src="./assets/window-icons/close-window.png" alt="close window icon" />
+          <div class="box-header">
+            <p>📂Project1: House_of_Games</p>
+            <div style="display: flex; padding-right: 5px; align-items: center">
+              <img
+                src="./assets/window-icons/maximize.png"
+                alt="maximize window icon"
+              />
+              <img
+                src="./assets/window-icons/minimize.png"
+                alt="minimize window icon"
+              />
+              <img
+                src="./assets/window-icons/close-window.png"
+                alt="close window icon"
+              />
+            </div>
+          </div>
+          <div class="border-wrap">
+            <div id="project-container">
+              <div class="image-container">
+                <img
+                  class="project-imgs"
+                  src="./assets/images/snapshot-games-fe.png"
+                  alt="screenshot of the welcome page of a games review website, including a header of 'House of Games', a nav bar and a colour scheme of red, pale green and pale pink."
+                />
+                <div class="overlay">
+                  <div class="text">
+                    <h2>House of Games</h2>
+                    <span class="tech-btns">
+                      <div class="btn-wrapper-tech">React</div>
+                      <div class="btn-wrapper-tech">Axios</div>
+                      <div class="btn-wrapper-tech">JavaScript</div>
+                    </span>
+                  </div>
                 </div>
-            </div>
-            <div class="border-wrap">
-                <div id="project-container">
-                  <div class="image-container">
-                    <img class="project-imgs" src="./assets/images/snapshot-games-be.png" alt="screenshot of the beginning of a list of API endpoints, including 3 GET requests and examples of the responses.">
-                        <div class="overlay">
-                            <div class="text">
-                    <h2>House of Games API</h2> 
-                    </br>       
-                                <span class="tech-btns">
-                                <div class="btn-wrapper-tech">Postgres</div>
-                                <div class="btn-wrapper-tech">Express</div>
-                                <div class="btn-wrapper-tech">SQL</div>
-                                <div class="btn-wrapper-tech">Jest</div>
-                                <div class="btn-wrapper-tech">Supertest</div>
-                                <div class="btn-wrapper-tech">JavaScript</div>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
+              </div>
 
-                    <div class="text-container">
-                    <p>
-                    A <span class="emphasis-text">back-end API</span> for searching board game reviews, offering capabilities to <span class="emphasis-text">access</span> reviews and comments, <span class="emphasis-text">post</span> comments, and vote on existing reviews. The project includes a comprehensive <span class="emphasis-text">testing suite</span> using Jest and Supertest to ensure robust functionality.
-                    </p>
-                    </br>
-                    <div>
-                    <a class="btn-wrapper1" target="_blank" href="https://nc-games-bp.onrender.com/api/" >View live</a>
-                    <a class="btn-wrapper2" target="_blank" href="https://github.com/be-part/BP-NC-Games-Backend" >View on GitHub</a>
-                    </div>
-                    </div>
+              <div class="text-container">
+                <p>
+                  A <span class="emphasis-text">front-end application</span> for
+                  board game reviews, featuring
+                  <span class="emphasis-text">search</span> and
+                  <span class="emphasis-text">filtering</span> functionalities.
+                  I've also implemented
+                  <span class="emphasis-text">user engagement</span> features,
+                  including commenting and voting. Explore my work to see the
+                  code or see the app in action.
+                </p>
 
+                <div>
+                  <a
+                    class="btn-wrapper1"
+                    target="_blank"
+                    href="https://bp-house-of-games.netlify.app/"
+                    >View live</a
+                  >
+                  <a
+                    class="btn-wrapper2"
+                    target="_blank"
+                    href="https://github.com/be-part/BP-NC-Games-Frontend"
+                    >View on GitHub</a
+                  >
                 </div>
+              </div>
             </div>
-            </div>
+          </div>
+        </div>
 
-            <div class="main-container">
-                <div class="box-header">
-                    <p>📂Project3: Insectispy </p>
-                    <div style="display:flex; padding-right:5px; align-items: center;">
-                    <img src="./assets/window-icons/maximize.png" alt="maximize window icon" />
-                    <img src="./assets/window-icons/minimize.png" alt="minimize window icon" />
-                    <img src="./assets/window-icons/close-window.png" alt="close window icon" />
-                    </div>
+        <div class="main-container">
+          <div class="box-header">
+            <p>📂Project2: House_of_Games_API</p>
+            <div style="display: flex; padding-right: 5px; align-items: center">
+              <img
+                src="./assets/window-icons/maximize.png"
+                alt="maximize window icon"
+              />
+              <img
+                src="./assets/window-icons/minimize.png"
+                alt="minimize window icon"
+              />
+              <img
+                src="./assets/window-icons/close-window.png"
+                alt="close window icon"
+              />
+            </div>
+          </div>
+          <div class="border-wrap">
+            <div id="project-container">
+              <div class="image-container">
+                <img
+                  class="project-imgs"
+                  src="./assets/images/snapshot-games-be.png"
+                  alt="screenshot of the beginning of a list of API endpoints, including 3 GET requests and examples of the responses."
+                />
+                <div class="overlay">
+                  <div class="text">
+                    <h2>House of Games API</h2>
+                    <span class="tech-btns">
+                      <div class="btn-wrapper-tech">Postgres</div>
+                      <div class="btn-wrapper-tech">Express</div>
+                      <div class="btn-wrapper-tech">SQL</div>
+                      <div class="btn-wrapper-tech">Jest</div>
+                      <div class="btn-wrapper-tech">Supertest</div>
+                      <div class="btn-wrapper-tech">JavaScript</div>
+                    </span>
+                  </div>
                 </div>
-            <div class="border-wrap">
-                <div id="project-container">
-                  <div class="image-container">
-                    <img class="project-imgs" src="./assets/images/snapshot-insectispy.png" alt="logo for an app that consists of a cartoon-style wooden board, with a smiling ladybird on it, and underneath the ladybird are the words 'InsectiSpy'">
-                        <div class="overlay">
-                            <div class="text">
-                    <h2>InsectiSpy</h2> 
-                    </br>       
-                                <span class="tech-btns">
-                                <div class="btn-wrapper-tech">Firebase</div>
-                                <div class="btn-wrapper-tech">Expo</div>
-                                <div class="btn-wrapper-tech">React Native</div>
-                                <div class="btn-wrapper-tech">Tensorflow</div>
-                                <div class="btn-wrapper-tech">JavaScript</div>
-                                <div class="btn-wrapper-tech">TypeScript</div>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="text-container">
-                    <p>
-                    As part of Northcoders, our team created an <span class="emphasis-text">Android app</span> that leverages <span class="emphasis-text">machine learning</span> to gamify insect learning. Users can capture insect images, access scientific and common names, and receive trivia. It incorporates a points system, leveling up, and badge unlocking based on insect discoveries.
-                    </p>
-                    </br>
-                    <div>
-                    <a class="btn-wrapper1" target="_blank" href="https://northcoders.com/projects/june-2023/insectispy" >View demo</a>
-                    </div>
-                    </div>
+              </div>
 
+              <div class="text-container">
+                <p>
+                  A <span class="emphasis-text">back-end API</span> for
+                  searching board game reviews, offering capabilities to
+                  <span class="emphasis-text">access</span> reviews and
+                  comments, <span class="emphasis-text">post</span> comments,
+                  and vote on existing reviews. The project includes a
+                  comprehensive
+                  <span class="emphasis-text">testing suite</span> using Jest
+                  and Supertest to ensure robust functionality.
+                </p>
+                <div>
+                  <a
+                    class="btn-wrapper1"
+                    target="_blank"
+                    href="https://nc-games-bp.onrender.com/api/"
+                    >View live</a
+                  >
+                  <a
+                    class="btn-wrapper2"
+                    target="_blank"
+                    href="https://github.com/be-part/BP-NC-Games-Backend"
+                    >View on GitHub</a
+                  >
                 </div>
+              </div>
             </div>
-            </div>
+          </div>
+        </div>
 
-            <div class="main-container">
-                <div class="box-header">
-                    <p>📂Project4: Portfolio </p>
-                    <div style="display:flex; padding-right:5px; align-items: center;">
-                    <img src="./assets/window-icons/maximize.png" alt="maximize window icon" />
-                    <img src="./assets/window-icons/minimize.png" alt="minimize window icon" />
-                    <img src="./assets/window-icons/close-window.png" alt="close window icon" />
-                    </div>
+        <div class="main-container">
+          <div class="box-header">
+            <p>📂Project3: Insectispy</p>
+            <div style="display: flex; padding-right: 5px; align-items: center">
+              <img
+                src="./assets/window-icons/maximize.png"
+                alt="maximize window icon"
+              />
+              <img
+                src="./assets/window-icons/minimize.png"
+                alt="minimize window icon"
+              />
+              <img
+                src="./assets/window-icons/close-window.png"
+                alt="close window icon"
+              />
+            </div>
+          </div>
+          <div class="border-wrap">
+            <div id="project-container">
+              <div class="image-container">
+                <img
+                  class="project-imgs"
+                  src="./assets/images/snapshot-insectispy.png"
+                  alt="logo for an app that consists of a cartoon-style wooden board, with a smiling ladybird on it, and underneath the ladybird are the words 'InsectiSpy'"
+                />
+                <div class="overlay">
+                  <div class="text">
+                    <h2>InsectiSpy</h2>
+                    <span class="tech-btns">
+                      <div class="btn-wrapper-tech">Firebase</div>
+                      <div class="btn-wrapper-tech">Expo</div>
+                      <div class="btn-wrapper-tech">React Native</div>
+                      <div class="btn-wrapper-tech">Tensorflow</div>
+                      <div class="btn-wrapper-tech">JavaScript</div>
+                      <div class="btn-wrapper-tech">TypeScript</div>
+                    </span>
+                  </div>
                 </div>
-            <div class="border-wrap">
-                <div id="project-container">
-                  <div class="image-container">
-                    <img class="project-imgs" src="./assets/images/snapshot-portfolio.png" alt="screenshot of the welcome page of this website, showing an introductory line, tech skills and skill icons. Each box has a colourful gradient border around it.">
-                        <div class="overlay">
-                            <div class="text">
-                            <h2>Portfolio</h2> 
-                            </br>       
-                                <span class="tech-btns">
-                                <div class="btn-wrapper-tech">CSS</div>
-                                <div class="btn-wrapper-tech">HTML</div>
-                                <div class="btn-wrapper-tech">JavaScript</div>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="text-container">
-                    <p>
-                        <span class="emphasis-text">This website!</span> I wanted to explore and develop my understanding of features such as contact forms, light/dark modes, <span class="emphasis-text">accessibility</span> and <span class="emphasis-text">responsive web design</span> whilst creating a portfolio website to display my skills and work.
-                    </p>
-                    </br>
-                    <div>
-                    <a class="btn-wrapper1" target="_blank" href="https://bronwyn-elizabeth.netlify.app/" >View live</a>
-                    <a class="btn-wrapper2" target="_blank" href="https://github.com/be-part/Portfolio-Website" >View on GitHub</a>
-                    </div>
-                    </div>
-
+              </div>
+              <div class="text-container">
+                <p>
+                  As part of Northcoders, our team created an
+                  <span class="emphasis-text">Android app</span> that leverages
+                  <span class="emphasis-text">machine learning</span> to gamify
+                  insect learning. Users can capture insect images, access
+                  scientific and common names, and receive trivia. It
+                  incorporates a points system, leveling up, and badge unlocking
+                  based on insect discoveries.
+                </p>
+                <div>
+                  <a
+                    class="btn-wrapper1"
+                    target="_blank"
+                    href="https://northcoders.com/projects/june-2023/insectispy"
+                    >View demo</a
+                  >
                 </div>
+              </div>
             </div>
-            </div>
-        </main>
+          </div>
+        </div>
 
-        
+        <div class="main-container">
+          <div class="box-header">
+            <p>📂Project4: Portfolio</p>
+            <div style="display: flex; padding-right: 5px; align-items: center">
+              <img
+                src="./assets/window-icons/maximize.png"
+                alt="maximize window icon"
+              />
+              <img
+                src="./assets/window-icons/minimize.png"
+                alt="minimize window icon"
+              />
+              <img
+                src="./assets/window-icons/close-window.png"
+                alt="close window icon"
+              />
+            </div>
+          </div>
+          <div class="border-wrap">
+            <div id="project-container">
+              <div class="image-container">
+                <img
+                  class="project-imgs"
+                  src="./assets/images/snapshot-portfolio.png"
+                  alt="screenshot of the welcome page of this website, showing an introductory line, tech skills and skill icons. Each box has a colourful gradient border around it."
+                />
+                <div class="overlay">
+                  <div class="text">
+                    <h2>Portfolio</h2>
+                    <span class="tech-btns">
+                      <div class="btn-wrapper-tech">CSS</div>
+                      <div class="btn-wrapper-tech">HTML</div>
+                      <div class="btn-wrapper-tech">JavaScript</div>
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="text-container">
+                <p>
+                  <span class="emphasis-text">This website!</span> I wanted to
+                  explore and develop my understanding of features such as
+                  contact forms, light/dark modes,
+                  <span class="emphasis-text">accessibility</span> and
+                  <span class="emphasis-text">responsive web design</span>
+                  whilst creating a portfolio website to display my skills and
+                  work.
+                </p>
+                <div>
+                  <a
+                    class="btn-wrapper1"
+                    target="_blank"
+                    href="https://bronwyn-elizabeth.netlify.app/"
+                    >View live</a
+                  >
+                  <a
+                    class="btn-wrapper2"
+                    target="_blank"
+                    href="https://github.com/be-part/Portfolio-Website"
+                    >View on GitHub</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
     </div>
 
-    
     <footer class="footer">
-        <p class="credits">icons by</p>
-        <a class="credits" target="_blank" aria-label="Icons8 website" href="https://icons8.com">Icons8</a>
+      <p class="credits">icons by</p>
+      <a
+        class="credits"
+        target="_blank"
+        aria-label="Icons8 website"
+        href="https://icons8.com"
+        >Icons8</a
+      >
     </footer>
-    
-
-</body>
+  </body>
 </html>

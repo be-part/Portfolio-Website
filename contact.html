@@ -1,164 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="../assets/css/nav.css" />
     <link rel="stylesheet" type="text/css" href="../assets/css/layout.css" />
-    <link rel="stylesheet" type="text/css" href="../assets/css/light-dark-mode.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../assets/css/light-dark-mode.css"
+    />
     <link rel="stylesheet" type="text/css" href="../assets/css/contact.css" />
-    <link rel="icon" href="./assets/icons/sun-icon.png"> 
+    <link rel="icon" href="./assets/icons/sun-icon.png" />
     <style>
-        .hidden {
-            display: none;
-        }
+      .hidden {
+        display: none;
+      }
     </style>
     <title>Contact</title>
-</head>
-<body class="hidden">
-    
-    <a class="skip-to-content-link" href="#main">
-        Skip to content
-    </a>
+  </head>
+  <body class="hidden">
+    <a class="skip-to-content-link" href="#main"> Skip to content </a>
     <nav class="nav-bar">
-        <div class="nav-container">
-        <ul class="nav-list"
-            <li class="nav-li"><a class="nav-a" href="./index.html">Home</a></li>
-            <li class="nav-li"><a class="nav-a" href="./projects.html">Projects</a></li>
-            <li class="nav-li"><a class="nav-a" href="./aboutme.html">About Me</a></li>
-            <li class="nav-li"><a id="active" class="nav-a" href="./contact.html">Contact</a></li>
+      <div class="nav-container">
+        <ul class="nav-list">
+          <li class="nav-li"><a class="nav-a" href="./index.html">Home</a></li>
+          <li class="nav-li">
+            <a class="nav-a" href="./projects.html">Projects</a>
+          </li>
+          <li class="nav-li">
+            <a class="nav-a" href="./aboutme.html">About Me</a>
+          </li>
+          <li class="nav-li">
+            <a id="active" class="nav-a" href="./contact.html">Contact</a>
+          </li>
         </ul>
-      
+
         <div class="nav-right">
-            <label class="switch" aria-label="Light/dark mode toggle">
-                <input type="checkbox" id="modeCheckBox">
-                <span class="slider"></span>  
-            </label>
+          <label class="switch" aria-label="Light/dark mode toggle">
+            <input type="checkbox" id="modeCheckBox" />
+            <span class="slider"></span>
+          </label>
         </div>
-        </div>
-      </nav>
-   
-                
+      </div>
+    </nav>
 
     <script>
-        function setPref() {
-            document.querySelector('.switch').style.display = 'inline-block';
+      function setPref() {
+        document.querySelector(".switch").style.display = "inline-block";
 
-            if (localStorage.getItem("mode") === "dark") {
-                let element = document.body;
-                element.classList.add('dark-mode')
-                element.classList.remove('light-mode')
-                document.getElementById("modeCheckBox").checked = true;
-            } else {
-                let element = document.body;
-                element.classList.add('light-mode')
-                element.classList.remove('dark-mode')
-                document.getElementById("modeCheckBox").checked = false;
-            }
+        if (localStorage.getItem("mode") === "dark") {
+          let element = document.body;
+          element.classList.add("dark-mode");
+          element.classList.remove("light-mode");
+          document.getElementById("modeCheckBox").checked = true;
+        } else {
+          let element = document.body;
+          element.classList.add("light-mode");
+          element.classList.remove("dark-mode");
+          document.getElementById("modeCheckBox").checked = false;
         }
+      }
 
-        window.addEventListener('DOMContentLoaded', () => {
-            document.body.classList.remove('hidden');
-            setPref();
-        });
+      window.addEventListener("DOMContentLoaded", () => {
+        document.body.classList.remove("hidden");
+        setPref();
+      });
 
-        let checkBox = document.getElementById("modeCheckBox");
-        
-        checkBox.addEventListener("keydown", (e) => {
-        if( e.key === "Enter"){
-        checkBox.checked = !checkBox.checked;
-        toggleLightDark();
+      let checkBox = document.getElementById("modeCheckBox");
+
+      checkBox.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") {
+          checkBox.checked = !checkBox.checked;
+          toggleLightDark();
         }
-        });
+      });
 
-        function toggleLightDark() {
-            if (checkBox.checked) {
-                let element = document.body;
-                element.classList.add('dark-mode')
-                element.classList.remove('light-mode')
-                localStorage.setItem("mode", "dark")
-            } else {
-                let element = document.body;
-                element.classList.add('light-mode')
-                element.classList.remove('dark-mode')
-                localStorage.setItem("mode", "light")
-            }
+      function toggleLightDark() {
+        if (checkBox.checked) {
+          let element = document.body;
+          element.classList.add("dark-mode");
+          element.classList.remove("light-mode");
+          localStorage.setItem("mode", "dark");
+        } else {
+          let element = document.body;
+          element.classList.add("light-mode");
+          element.classList.remove("dark-mode");
+          localStorage.setItem("mode", "light");
         }
-        checkBox.addEventListener("change", toggleLightDark);
+      }
+      checkBox.addEventListener("change", toggleLightDark);
     </script>
-    
+
     <main>
-    <div class="container">
-
+      <div class="container">
         <div class="hyperlinked-icons">
+          <div class="item">
+            <a
+              target="_blank"
+              href="https://github.com/be-part"
+              aria-label="GitHub link"
+            >
+              <img
+                id="inverse"
+                src="./assets/icons/github-icon.png"
+                alt="neon pink and blue git hub icon"
+            /></a>
+          </div>
 
-            <div class="item">
-            <a target="_blank" href="https://github.com/be-part" aria-label="GitHub link"> <img class="img-icons" src="./assets/icons/github-icon.png"  alt="neon pink and blue git hub icon"/></a>
-            <span class="caption">GitHub</span>
-            </div>
-
-            <div class="item">
-            <a target="_blank" href="https://www.linkedin.com/in/bronwyn-parton/" aria-label="LinkedIn profile for Bronwyn Parton"> <img class="img-icons" src="./assets/icons/linkedin-icon.png"  alt="neon pink and blue linked in icon"/></a>
-            <span class="caption">LinkedIn</span>
-            </div>
-
+          <div class="item">
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/bronwyn-parton/"
+              aria-label="LinkedIn profile for Bronwyn Parton"
+            >
+              <img
+                id="inverse"
+                src="./assets/icons/linkedin-icon.png"
+                alt="neon pink and blue linked in icon"
+            /></a>
+          </div>
         </div>
 
-        <div class="box1"> 
-            <div class="typewriter">
-            <h1> Contact me:</h1> 
-            </div>
-            <p class="projects-text"> Send me a message here or check out my social media. </p>
+        <div class="box1">
+          <div class="typewriter">
+            <h1>Contact me:</h1>
+          </div>
+          <p class="projects-text">
+            Send me a message here or check out my social media.
+          </p>
         </div>
 
-        
         <div class="box2">
-            <div class="main-container">
-                <div class="box-header">
-                    <p>⏳Document1 </p>
-                    <div style="display:flex; padding-right:5px; align-items: center;">
-                    <img src="./assets/window-icons/maximize.png" alt="maximize window icon" />
-                    <img src="./assets/window-icons/minimize.png" alt="minimize window icon" />
-                    <img src="./assets/window-icons/close-window.png" alt="close window icon" />
-                    </div>
-                </div>
-            <div class="border-wrap">
-
-                <form id="form-container" 
-                name="contact" 
-                    method="POST" 
-                    data-netlify="true"
-                    data-netlify-recaptcha="true">
-                    <p>
-                      <label>Name: <input type="text" name="name" placeholder="Your name.." required /> </label>
-                    </p>
-        
-                    <p>
-                        <label>Email: <input type="email" name="email" placeholder="someone@example.com" required /></label>
-                    </p>
-
-                    <p>
-                      <label>Message: <textarea name="message" placeholder="Your message or inquiry." style="height:160px"></textarea></label>
-                    </p>
-                    <div data-netlify-recaptcha="true"></div>
-                    <p>
-                      <button class="btn-wrapper2" type="submit">Send</button>
-                    </p>
-                  </form>
-
+          <div class="main-container">
+            <div class="box-header">
+              <p>⏳Document1</p>
+              <div
+                style="display: flex; padding-right: 5px; align-items: center"
+              >
+                <img
+                  src="./assets/window-icons/maximize.png"
+                  alt="maximize window icon"
+                />
+                <img
+                  src="./assets/window-icons/minimize.png"
+                  alt="minimize window icon"
+                />
+                <img
+                  src="./assets/window-icons/close-window.png"
+                  alt="close window icon"
+                />
+              </div>
             </div>
-        </div>
-        </div>
+            <div class="border-wrap">
+              <form
+                id="form-container"
+                name="contact"
+                method="POST"
+                data-netlify="true"
+                data-netlify-recaptcha="true"
+              >
+                <p>
+                  <label
+                    >Name:
+                    <input
+                      type="text"
+                      name="name"
+                      placeholder="Your name.."
+                      required
+                    />
+                  </label>
+                </p>
 
-    </div> 
-    </div>
+                <p>
+                  <label
+                    >Email:
+                    <input
+                      type="email"
+                      name="email"
+                      placeholder="someone@example.com"
+                      required
+                  /></label>
+                </p>
+
+                <p>
+                  <label
+                    >Message:
+                    <textarea
+                      name="message"
+                      placeholder="Your message or inquiry."
+                      style="height: 160px"
+                    ></textarea>
+                  </label>
+                </p>
+                <div data-netlify-recaptcha="true"></div>
+                <p>
+                  <button class="btn-wrapper2" type="submit">Send</button>
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <footer class="footer">
-        <p class="credits">icons by</p>
-        <a class="credits" target="_blank" aria-label="Icons8 website" href="https://icons8.com">Icons8</a>
+      <p class="credits">icons by</p>
+      <a
+        class="credits"
+        target="_blank"
+        aria-label="Icons8 website"
+        href="https://icons8.com"
+        >Icons8</a
+      >
     </footer>
-
-</body>
+  </body>
 </html>

@@ -1,3 +1,4 @@
+/* General Styling */
 * {
   margin: 0;
 }
@@ -32,7 +33,6 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-  width: 100%;
 }
 
 .box2 {
@@ -67,6 +67,30 @@ p {
   font-weight: bold;
   font-size: 19px;
 }
+
+/* Social Media Links */
+.hyperlinked-icons {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 14px;
+  }
+  
+  
+  .item {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .item img {
+      width:30px;
+      height:30px;
+      margin: 3px;
+  }
+
 /* Breakpoints */
 @media only screen and (min-width: 551px) and (max-width: 800px) {
   .container {
@@ -156,6 +180,15 @@ p {
   .nav-container {
     padding: 0px;
   }
+
+  .nav-right {
+    transform: translateY(37px);
+  }
+
+  .hyperlinked-icons {
+    margin-left: 0;
+    margin-right: auto;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -220,16 +253,6 @@ p {
     font-size: small !important;
   }
 
-  .switch {
-    width: 52px !important;
-    height: 24px !important;
-  }
-
-  .slider:before {
-    height: 18px !important;
-    width: 18px !important;
-  }
-
   .box-header p {
     padding-left: 12px !important;
     font-size: 12px;
@@ -252,10 +275,11 @@ p {
   }
 
   .nav-right {
-    transform: translateY(35px);
+    transform: translateY(37px);
   }
 
-  .hyperlinked-items {
+  .hyperlinked-icons {
+    margin-left: 0;
     margin-right: auto;
   }
 }
