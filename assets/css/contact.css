@@ -39,11 +39,16 @@
     width: 120px;
 }
 
+.item img {
+    width:50px;
+    height:50px;
+}
+
 .caption {
     display: block;
     font-family: sans-serif, Courier New, Courier, monospace;
     font-weight: 400;
-    color:#C125FF;
+    color:#9d00db;
 }
 
 form input, form textarea {

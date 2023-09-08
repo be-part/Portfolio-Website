@@ -120,7 +120,7 @@
 
 .light-mode #active {
   color: #FC6F50;
-  border-bottom: 4px solid #FC6F50;
+  border-bottom: 4px solid #f85b38;
   transition: 0.3s;
 }
 

@@ -45,16 +45,16 @@
         function setPref() {
             document.querySelector('.switch').style.display = 'inline-block';
 
-            if (localStorage.getItem("mode") === "dark") {
-                let element = document.body;
-                element.classList.add('dark-mode')
-                element.classList.remove('light-mode')
-                document.getElementById("modeCheckBox").checked = true;
-            } else {
+            if (localStorage.getItem("mode") === "light") {
                 let element = document.body;
                 element.classList.add('light-mode')
                 element.classList.remove('dark-mode')
                 document.getElementById("modeCheckBox").checked = false;
+            } else {
+              let element = document.body;
+                element.classList.add('dark-mode')
+                element.classList.remove('light-mode')
+                document.getElementById("modeCheckBox").checked = true;
             }
         }
 
