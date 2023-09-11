@@ -1,106 +1,3 @@
-
-/* Mode Styling - Dark */
-.dark-mode .typewriter h1 {
-  color: #FFF;
-}
-
-.dark-mode {
-    background-color: rgb(27, 26, 26);
-    color: rgb(255, 255, 255);
-}
-
-.dark-mode .box2 {
-    background-color: rgb(27, 26, 26);
-}
-
-.dark-mode .nav-a {
-    color:rgb(255, 255, 255)
-}
-
-.dark-mode .nav-a:hover {
-  color: #42FEFF;
-  transition: 0.2s;
-}
-
-.dark-mode #active {
-  color: #42FEFF;
-  border-bottom: 4px solid #42FEFF;
-  transition: 0.3s;
-}
-
-.dark-mode #intro {
-  background-color: rgb(27, 26, 26);
-  color: rgb(255, 255, 255);
-}
-
-.dark-mode #skills {
-  background-color: rgb(27, 26, 26);
-  color: rgb(255, 255, 255);
-}
-
-.dark-mode #skills-images {
-  background-color: rgb(27, 26, 26);
-  color: rgb(255, 255, 255);
-}
-
-.dark-mode #form-container {
-  background-color: rgb(27, 26, 26);
-  color: rgb(255, 255, 255);
-}
-
-.dark-mode #project-container {
-  background-color: rgb(27, 26, 26);
-  color: rgb(255, 255, 255);
-}
-
-.dark-mode .about-me-container {
-  background-color: rgb(27, 26, 26);
-  color: rgb(255, 255, 255);
-}
-
-.dark-mode .switch {
-  border: 1px solid rgb(27, 26, 26);
-}
-
-.dark-mode #inverse {
-  filter:invert(1);
-}
-
-.dark-mode .btn-wrapper1 {
-  box-shadow: 5px 5px white;
-}
-
-.dark-mode .btn-wrapper2 {
-  box-shadow: 5px 5px white;
-}
-
-.dark-mode .box-header {
-  background: linear-gradient(to right, #662C92, #42FEFF);
-}
-
-.dark-mode .border-wrap {
-  background: linear-gradient(to right, #662C92, #42FEFF);
-}
-
-.dark-mode .border-wrap2 {
-  background: linear-gradient(to right, #662C92, #42FEFF);
-}
-
-.dark-mode .about-me-headings {
-  color: #F9FB74;
-}
-
-.dark-mode .credits {
-  color: #FFFFFF;
-}
-
-.dark-mode .emphasis-text{
-  color:#F9FB74;
-}
-
-
-/* Mode Styling - Light */
-
 .light-mode .typewriter h1 {
   color: #000;
 }
@@ -119,13 +16,13 @@
 }
 
 .light-mode .nav-a:hover {
-  color:#FC6F50;
+  color:#662C92;
   transition: 0.2s;
 }
 
 .light-mode #active {
-  color: #FC6F50;
-  border-bottom: 4px solid #f85b38;
+  color: #662C92;
+  border-bottom: 4px solid #662C92;
   transition: 0.3s;
 }
 
@@ -165,16 +62,17 @@
 
 .light-mode .XL-text {
   color: #ffffff;
-  text-shadow: 0px 0px 21px rgba(0, 0, 0, 0.753);
+  -webkit-text-stroke:1px #141414;
+  text-shadow: 0px 0px 21px rgb(0, 0, 0);
 }
 
 .light-mode .L-text {
   color: transparent;
-    -webkit-text-stroke: 0.3px rgba(0, 0, 0, 0.497);
+    -webkit-text-stroke: 0.3px rgba(0, 0, 0, 0.589);
 }
 
 .light-mode .btn-wrapper1 {
-  box-shadow: 5px 5px black;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.74);
 }
 
 .light-mode .btn-wrapper2 {
@@ -201,10 +99,15 @@
   color:#662C92;
 }
 
+.light-mode #inverse {
+    filter:invert(0);
+}
+
+.light-mode .credits {
+    color: #000000;
+}
 
 
-/* Switch Styling */
-/* The switch - the box around the slider */
 .switch {
     font-size: 17px;
     position: relative;
@@ -213,16 +116,15 @@
     margin-top: 2px;
     margin-bottom: 4px;
     border-radius: 20px;
+    border: 1px solid rgb(27, 26, 26);
   }
   
-/* Hide default HTML checkbox */
   .switch input {
     opacity: 0;
     width: 0;
     height: 0;
   }
   
-/* The slider */
   .slider {
     position: absolute;
     cursor: pointer;

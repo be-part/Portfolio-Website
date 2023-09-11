@@ -48,6 +48,8 @@
     margin: 0 2px 2px 2px;
     max-width: 700px;
     border-radius: 8px;
+    background-color: rgb(27, 26, 26);
+  color: rgb(255, 255, 255);
 }
 
 #skills {
@@ -55,6 +57,8 @@
     margin: 0 2px 2px 2px;
     max-width: 700px;
     border-radius: 8px;
+    background-color: rgb(27, 26, 26);
+  color: rgb(255, 255, 255);
 }
 
 #skills-images {
@@ -66,6 +70,8 @@
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
+    background-color: rgb(27, 26, 26);
+  color: rgb(255, 255, 255);
 }
 
 .img-icons {

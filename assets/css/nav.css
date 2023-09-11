@@ -37,10 +37,22 @@
   font-weight: 400;
   background-color: transparent;
   text-decoration: none;
+  color:rgb(255, 255, 255)
 }
 
 .nav-right {
   flex: 0 1 auto;
   margin-left: auto;
   margin-right: 8px;
+}
+
+.nav-a:hover {
+  color: #42FEFF;
+  transition: 0.2s;
+}
+
+#active {
+  color: #42FEFF;
+  border-bottom: 4px solid #42FEFF;
+  transition: 0.3s;
 }
