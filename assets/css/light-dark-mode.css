@@ -92,7 +92,7 @@
 }
 
 .light-mode .about-me-headings {
-  color: #662C92;
+  color: #000000;
 }
 
 .light-mode .emphasis-text{
@@ -145,7 +145,7 @@
   border-radius: 20px;
   right: 5px; 
   bottom: 3px;
-  background: linear-gradient(40deg, #d87315, #e7ac2c); 
+  background: linear-gradient(40deg, #FC2F75, #D2A540 ); 
   transition: 0.4s;
 }
 
@@ -156,7 +156,7 @@ input:checked + .slider {
 input:checked + .slider:before {
   transform: translateX(-1.5em); 
   background: rgb(27, 26, 26);
-  box-shadow: inset 3px 2px 5px -2px #8983f7, inset 10px 5px 0 0 #a3dafb;
+  box-shadow: inset 3px 2px 5px -2px #662C92, inset 10px 5px 0 0 #42FEFF;
 }
 
 .switch:hover {
