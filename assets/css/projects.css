@@ -1,44 +1,61 @@
-/* General Page Styling */
-
-/* Page intro text */
 .projects-text {
-    text-align: end;
-    max-width: 400px;
+    text-align: start;
+    margin: 20px;
+    font-family: Courier New, Courier, monospace;
 }
 
-/* Project container layout */
 #project-container {
     padding: 12px;
-    margin: 2px;
-    /* max-width: 900px; */
+    margin: 0 2px 2px 2px;
     border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: rgb(27, 26, 26);
+  color: rgb(255, 255, 255);
 }
 
-/* Image styling */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #F9FB74;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #F9FB74;
+  }
+
+
+.image-container:hover .overlay {
+        opacity: 0.95;
+}
+
 .project-imgs {
     width: 100%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 3px;
     border-style: solid;
     border-width: 1px;
-    border-color: #9c9fa5;
+    border-color: #7c7c7c;
 }
 
 .image-container {
     position: relative;
     width: 50%;
-    min-width: 300px;
+    min-width: 250px;
+    max-width: 350px;
     font-size: 0;
 }
 
-/* Overlay text */
 .text {
     color: rgb(0, 0, 0);
     position: absolute;
-    font-size: 16px;
+    font-size: 13px;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
@@ -52,7 +69,6 @@
     justify-content: center;
 }
 
-/* Project text */
 .text-container {
     max-width: 400px;
     margin: 5px;
@@ -61,15 +77,13 @@
     flex-direction: column;
 }
 
-/* Project links */
 .text-container a {
-    font-family: 'Roboto Slab', 'sans-serif', 'Courier New', Courier, monospace;
-    font-size: 16px;
+    font-family: Courier New, Courier, monospace;
+    font-size: 14px;
     display: inline-block;
     text-align: center;
 }
 
-/* Tech stack info */
 .tech-btns {
     display:flex;
     flex-direction: row;
@@ -92,121 +106,58 @@
     margin: 5px;
     overflow: hidden;
     display: inline-block;
-    font-family: 'Roboto Slab', 'sans-serif', 'Courier New', Courier, monospace;
+    font-family: Courier New, Courier, monospace;
     font-weight: 400;
 }
 
-/* Button Styling */
 .btn-wrapper1 {
+    background: #C0C0C0;
     padding: 10px;
-    background: #D2A540;
-    color: rgb(255, 255, 255);
-    border-color: #D2A540;
-    border-width: 2px;
-    border-style: solid;
+    border: 3px solid #7c7c7c;
+    border-top-color: #fff;
+    border-left-color: #fff;
+    height: 17px;
+    width: 115px;
     outline: none;
     cursor: pointer;
-    width: 115px;
-    border-radius: 8px;
-    text-align: center;
-    margin: 5px;
     overflow: hidden;
     white-space: nowrap;
+    margin: 8px;
+    color: black;
+    box-shadow: 5px 5px white;
   }
 
 .btn-wrapper1:hover {
-    background: #ffffff;
-    border-color: #D2A540;
-    border-width: 2px;
-    border-style: solid;
-    color:#D2A540;
+    background: #969494;
+    color: #FC2F75;
     font-weight:bold;
+    box-shadow: 5px 5px #FC2F75;
 }
 
 .btn-wrapper2 {
+    background: #C0C0C0;
     padding: 10px;
-    background: #0E3523;
-    color: rgb(255, 255, 255);
-    border-color: #0E3523;
-    border-width: 2px;
-    border-style: solid;
+    border: 3px solid #7c7c7c;
+    border-top-color: #f1f1f1;
+    border-left-color: #f1f1f1;
+    height: 17px;
+    width: 115px;
     outline: none;
     cursor: pointer;
-    width: 115px;
-    border-radius: 8px;
     text-align: center;
-    margin: 5px;
     overflow: hidden;
     white-space: nowrap;
+    margin: 8px;
+    color: black;
+    box-shadow: 5px 5px white;
   }
 
 .btn-wrapper2:hover {
-    background: #ffffff;
-    border-color: #0E3523;
-    border-width: 2px;
-    border-style: solid;
-    color:#0E3523;
+    background: #969494;
+    color: #551A8B;
     font-weight:bold;
+    box-shadow: 5px 5px #551A8B;
 }
 
 
-/* Project Styling 1*/
 
-.overlay1 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #314664;
-    border-radius: 10px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #314664;
-  }
-
-
-.image-container:hover .overlay1 {
-        opacity: 0.95;
-}
-
-.border-wrap1 {
-    max-width: 800px;
-    position: relative;
-    background: linear-gradient(to right, #314664, #D2A540);
-    padding: 1px;
-    border-radius: 8px;
-    margin: 14px;
-}
-
-/* Project Styling  2*/
-.overlay2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #314664;
-    border-radius: 10px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #314664;
-  }
-
-
-.image-container:hover .overlay2 {
-        opacity: 0.95;
-}
-
-.border-wrap2 {
-    max-width: 800px;
-    position: relative;
-    background: linear-gradient(to right,  #D2A540, #314664);
-    padding: 1px;
-    border-radius: 8px;
-    margin: 14px;
-}

@@ -1,151 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="../assets/css/nav.css" />
     <link rel="stylesheet" type="text/css" href="../assets/css/layout.css" />
-    <link rel="stylesheet" type="text/css" href="../assets/css/light-dark-mode.css" />
+    <meta name="description" content="Bronwyn Parton software developer portfolio website.">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../assets/css/light-dark-mode.css"
+    />
     <link rel="stylesheet" type="text/css" href="../assets/css/index.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" href="./assets/icons/plant-icon.png">
+    <link rel="icon" href="./assets/icons/sun-icon.png" />
     <style>
-        .hidden {
-            display: none;
-        }
+      .hidden {
+        display: none;
+      }
     </style>
     <title>Home</title>
-</head>
-<body class="hidden">
-      
-    <a class="skip-to-content-link" href="#main">
-        Skip to content
-    </a>
+  </head>
+  <body class="hidden">
+    <a class="skip-to-content-link" href="#main"> Skip to content </a>
     <nav class="nav-bar">
+      <div class="nav-container">
         <ul class="nav-list">
-            <li class="nav-li"><a id="active" class="nav-a" href="./index.html">Home</a></li>
-            <li class="nav-li"><a class="nav-a" href="./projects.html">Projects</a></li>
-            <li class="nav-li"><a class="nav-a" href="./aboutme.html">About Me</a></li>
-            <li class="nav-li"><a class="nav-a" href="./contact.html">Contact</a></li>
+          <li class="nav-li">
+            <a id="active" class="nav-a" href="./index.html">Home</a>
+          </li>
+          <li class="nav-li">
+            <a class="nav-a" href="./projects.html">Projects</a>
+          </li>
+          <li class="nav-li">
+            <a class="nav-a" href="./aboutme.html">About Me</a>
+          </li>
+          <li class="nav-li">
+            <a class="nav-a" href="./contact.html">Contact</a>
+          </li>
         </ul>
-      
+
         <div class="nav-right">
-            
-            <label class="switch" aria-label="Light/dark mode toggle">
-                <input type="checkbox" id="modeCheckBox">
-                <span class="slider"></span>  
-            </label>
-            
+          <label class="switch" aria-label="Light/dark mode toggle">
+            <input type="checkbox" id="modeCheckBox" />
+            <span class="slider"></span>
+          </label>
         </div>
-      </nav>
-   
-                
+      </div>
+    </nav>
 
     <script>
-        function setPref() {
-            document.querySelector('.switch').style.display = 'inline-block';
+      function setPref() {
+        document.querySelector(".switch").style.display = "inline-block";
 
-            if (localStorage.getItem("mode") === "dark") {
-                let element = document.body;
-                element.classList.add('dark-mode')
-                element.classList.remove('light-mode')
-                document.getElementById("modeCheckBox").checked = true;
-            } else {
-                let element = document.body;
-                element.classList.add('light-mode')
-                element.classList.remove('dark-mode')
-                document.getElementById("modeCheckBox").checked = false;
-            }
+        if (localStorage.getItem("mode") === "light") {
+          let element = document.body;
+          element.classList.add("light-mode");
+          element.classList.remove("dark-mode");
+          document.getElementById("modeCheckBox").checked = false;
+        } else {
+          let element = document.body;
+          element.classList.add("dark-mode");
+          element.classList.remove("light-mode");
+          document.getElementById("modeCheckBox").checked = true;
         }
+      }
 
-        window.addEventListener('DOMContentLoaded', () => {
-            document.body.classList.remove('hidden');
-            setPref();
-        });
+      window.addEventListener("DOMContentLoaded", () => {
+        document.body.classList.remove("hidden");
+        setPref();
+      });
 
-        let checkBox = document.getElementById("modeCheckBox");
-        
-        checkBox.addEventListener("keydown", (e) => {
-        if( e.key === "Enter"){
-        checkBox.checked = !checkBox.checked;
-        toggleLightDark();
+      let checkBox = document.getElementById("modeCheckBox");
+
+      checkBox.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") {
+          checkBox.checked = !checkBox.checked;
+          toggleLightDark();
         }
-        });
+      });
 
-        function toggleLightDark() {
-            if (checkBox.checked) {
-                let element = document.body;
-                element.classList.add('dark-mode')
-                element.classList.remove('light-mode')
-                localStorage.setItem("mode", "dark")
-            } else {
-                let element = document.body;
-                element.classList.add('light-mode')
-                element.classList.remove('dark-mode')
-                localStorage.setItem("mode", "light")
-            }
+      function toggleLightDark() {
+        if (checkBox.checked) {
+          let element = document.body;
+          element.classList.add("dark-mode");
+          element.classList.remove("light-mode");
+          localStorage.setItem("mode", "dark");
+        } else {
+          let element = document.body;
+          element.classList.add("light-mode");
+          element.classList.remove("dark-mode");
+          localStorage.setItem("mode", "light");
         }
-        checkBox.addEventListener("change", toggleLightDark);
+      }
+      checkBox.addEventListener("change", toggleLightDark);
     </script>
-    
-  
+
     <div class="container">
-        <section class="box1" id="about-me-box1">
-            <h1> Bronwyn Parton </h1>
-            <p>🍃Welcome!</p>
-            <div class="image-container-about-me">
-            <img    src="../assets/images/profile-image.jpg" 
-                    alt="Woman smiling at camera with long, wavy auburn hair and a leaf blouse on."
-                    class="img-profile-pic"
-                    >
+      <div class="hyperlinked-icons">
+        <div class="item">
+          <a
+            target="_blank"
+            href="https://github.com/be-part"
+            aria-label="GitHub link"
+          >
+            <img
+              id="inverse"
+              src="./assets/icons/github-icon.png"
+              alt="git hub logo icon"
+          /></a>
+        </div>
+
+        <div class="item">
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/bronwyn-parton/"
+            aria-label="LinkedIn profile for Bronwyn Parton"
+          >
+            <img
+              id="inverse"
+              src="./assets/icons/linkedin-icon.png"
+              alt="linked in logo icon"
+          /></a>
+        </div>
+      </div>
+
+      <section class="box1">
+        <div class="typewriter">
+          <h1>Hello</h1>
+        </div>
+        <p class="index-text">
+          I'm Bronwyn.
+        </p>
+      </section>
+
+      <main class="box2">
+        <div class="main-container">
+          <div class="box-header">
+            <p>🌊About_me</p>
+            <div style="display: flex; padding-right: 5px; align-items: center">
+              <img
+                src="./assets/window-icons/maximize.png"
+                alt="maximize window icon"
+              />
+              <img
+                src="./assets/window-icons/minimize.png"
+                alt="minimize window icon"
+              />
+              <img
+                src="./assets/window-icons/close-window.png"
+                alt="close window icon"
+              />
             </div>
-            
-        </section>
-        
-        
-        <main class="box2" id="about-me-box2">
-            <div class="border-wrap1">
+          </div>
+          <div class="border-wrap">
             <section id="intro">
-                <p>My name is Bronwyn and I'm a full-stack software developer who is passionate about science, learning and creativity .</p> 
+              <p style="margin-bottom: 20px;">
+                A <span class="emphasis-text">full-stack software developer</span>
+                driven by a passion for science and learning, with a diverse
+                skill set cultivated from my former teaching career.
+              </p>
+              <h2 class="index-headings">
+                Technical Skills
+              </h2>
+              <p>- - - - - - - - - - - - - - - - - - -</p>
+              <section style="margin-bottom: 15px;" id="skills">
+                <p><span class="emphasis-text">Language:</span> JavaScript, C#</p>
+                <p>
+                  <span class="emphasis-text">Front end:</span> HTML, CSS, React, React
+                  Native
+                </p>
+                <p>
+                  <span class="emphasis-text">Back end:</span> SQL Server, Node.js,
+                  Express, SQL, PSQL, Firebase
+                </p>
+                <p>
+                  <span class="emphasis-text">Testing:</span> Jest, Supertest,
+                  Test-Driven Development
+                </p>
+                <p><span class="emphasis-text">Frameworks: </span> .NET</p>
+              </section>
             </section>
-            </div>
+          </div>
+        </div>
 
-            <div class="border-wrap2">
-            <section id="skills">
-                <p><span class="bold">Language:</span> JavaScript, C# </p>
-                <p><span class="bold">Front end:</span> HTML, CSS, React, React Native</p>
-                <p><span class="bold">Back end:</span> SQL Server, Node.js, Express, SQL, PSQL, Firebase</p>
-                <p><span class="bold">Testing:</span> Jest, Supertest, Test-Driven Development </p>
-                <p><span class="bold">Frameworks: </span> .NET </p>
-            </section>
+        <div class="main-container">
+          <div class="box-header">
+            <p>💽Skills</p>
+            <div style="display: flex; padding-right: 5px; align-items: center">
+              <img
+                src="./assets/window-icons/maximize.png"
+                alt="maximize window icon"
+              />
+              <img
+                src="./assets/window-icons/minimize.png"
+                alt="minimize window icon"
+              />
+              <img
+                src="./assets/window-icons/close-window.png"
+                alt="close window icon"
+              />
             </div>
-
-            <div class="border-wrap3">
+          </div>
+          <div class="border-wrap">
             <section id="skills-images">
-                    <img class="img-icons" src="./assets/icons/javascript-icon.png" alt="javascript logo">
-                    <img class="img-icons" src="./assets/icons/html-icon.png" alt="html logo">
-                    <img class="img-icons" src="./assets/icons/css-icon.png" alt="css logo">
-                    <img class="img-icons" src="./assets/icons/react-icon.png" alt="react logo">
-                    <img class="img-icons" src="./assets/icons/sql-icon.png" alt="sql-icon.png logo">
-                    <img class="img-icons" src="./assets/icons/postgres-icon.png" alt="postgres-icon.png logo">
-                    <img class="img-icons" src="./assets/icons/firebase-icon.png" alt="firebase logo">
-                    <img class="img-icons" src="./assets/icons/github-icon.png" alt="github logo">
-                    <img class="img-icons" src="./assets/icons/jest-icon.png" alt="jest logo">
-                    <img class="img-icons" src="./assets/icons/csharp-icon.png" alt="c sharp logo">
-                    <img class="img-icons" src="./assets/icons/dotnet-icon.png" alt="dotnet logo">
+              <img
+                class="img-icons"
+                id="inverse"
+                src="./assets/icons/javascript-icon.png"
+                alt="javascript logo"
+              />
+              <img
+                class="img-icons"
+                id="inverse"
+                src="./assets/icons/html-icon.png"
+                alt="html logo"
+              />
+              <img
+                class="img-icons"
+                id="inverse"
+                src="./assets/icons/css-icon.png"
+                alt="css logo"
+              />
+              <img
+                class="img-icons"
+                id="inverse"
+                src="./assets/icons/react-icon.png"
+                alt="react logo"
+              />
+              <img
+                class="img-icons"
+                id="inverse"
+                src="./assets/icons/sql-icon.png"
+                alt="sql-icon.png logo"
+              />
+              <img
+                class="img-icons"
+                id="inverse"
+                src="./assets/icons/postgres-icon.png"
+                alt="postgres-icon.png logo"
+              />
+              <img
+                class="img-icons"
+                id="inverse"
+                src="./assets/icons/firebase-icon.png"
+                alt="firebase logo"
+              />
+              <img
+                class="img-icons"
+                id="inverse"
+                src="./assets/icons/github-icon.png"
+                alt="github logo"
+              />
+              <img
+                class="img-icons"
+                id="inverse"
+                src="./assets/icons/csharp-icon.png"
+                alt="c sharp logo"
+              />
+              <img
+                class="img-icons"
+                id="inverse"
+                src="./assets/icons/dotnet-icon.png"
+                alt="dotnet logo"
+              />
             </section>
-            </div>
-
-        </main>
+          </div>
+        </div>
+      </main>
     </div>
-    
-    <footer class="footer">
-        <p class="credits">icons by</p>
-        <a class="credits" target="_blank" aria-label="Icons8 website" href="https://icons8.com">Icons8</a>
-    </footer>
 
-</body>
+    <footer class="footer">
+      <p class="credits">icons by</p>
+      <a
+        class="credits"
+        target="_blank"
+        aria-label="Icons8 website"
+        href="https://icons8.com"
+        >Icons8</a
+      >
+    </footer>
+  </body>
 </html>

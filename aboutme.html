@@ -1,138 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="../assets/css/nav.css" />
     <link rel="stylesheet" type="text/css" href="../assets/css/layout.css" />
-    <link rel="stylesheet" type="text/css" href="../assets/css/light-dark-mode.css" />
+    <meta name="description" content="Bronwyn Parton software developer portfolio website.">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../assets/css/light-dark-mode.css"
+    />
     <link rel="stylesheet" type="text/css" href="../assets/css/aboutme.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" href="./assets/icons/plant-icon.png">    
+
+    <link rel="icon" href="./assets/icons/sun-icon.png" />
     <style>
-        .hidden {
-            display: none;
-        }
+      .hidden {
+        display: none;
+      }
     </style>
     <title>About Me</title>
-</head>
-<body class="hidden">
-      
-    <a class="skip-to-content-link" href="#main">
-        Skip to content
-    </a>
+  </head>
+  <body class="hidden">
+    <a class="skip-to-content-link" href="#main"> Skip to content </a>
     <nav class="nav-bar">
+      <div class="nav-container">
         <ul class="nav-list">
           <li class="nav-li"><a class="nav-a" href="./index.html">Home</a></li>
-          <li class="nav-li"><a class="nav-a" href="./projects.html">Projects</a></li>
-          <li class="nav-li"><a id="active" class="nav-a" href="./aboutme.html">About Me</a></li>
-          <li class="nav-li"><a class="nav-a" href="./contact.html">Contact</a></li>
+          <li class="nav-li">
+            <a class="nav-a" href="./projects.html">Projects</a>
+          </li>
+          <li class="nav-li">
+            <a id="active" class="nav-a" href="./aboutme.html">About Me</a>
+          </li>
+          <li class="nav-li">
+            <a class="nav-a" href="./contact.html">Contact</a>
+          </li>
         </ul>
-      
+
         <div class="nav-right">
-          <ul>
-            <li>
-                <label class="switch" aria-label="Light/dark mode toggle">
-                    <input type="checkbox" id="modeCheckBox">
-                    <span class="slider"></span>  
-                </label>
-            </li>
-          </ul>
+          <label class="switch" aria-label="Light/dark mode toggle">
+            <input type="checkbox" id="modeCheckBox" />
+            <span class="slider"></span>
+          </label>
         </div>
-      </nav>
-   
-                
+      </div>
+    </nav>
 
     <script>
-        function setPref() {
-            document.querySelector('.switch').style.display = 'inline-block';
+      function setPref() {
+        document.querySelector(".switch").style.display = "inline-block";
 
-            if (localStorage.getItem("mode") === "dark") {
-                let element = document.body;
-                element.classList.add('dark-mode')
-                element.classList.remove('light-mode')
-                document.getElementById("modeCheckBox").checked = true;
-            } else {
-                let element = document.body;
-                element.classList.add('light-mode')
-                element.classList.remove('dark-mode')
-                document.getElementById("modeCheckBox").checked = false;
-            }
+        if (localStorage.getItem("mode") === "dark") {
+          let element = document.body;
+          element.classList.add("dark-mode");
+          element.classList.remove("light-mode");
+          document.getElementById("modeCheckBox").checked = true;
+        } else {
+          let element = document.body;
+          element.classList.add("light-mode");
+          element.classList.remove("dark-mode");
+          document.getElementById("modeCheckBox").checked = false;
         }
+      }
 
+      window.addEventListener("DOMContentLoaded", () => {
+        document.body.classList.remove("hidden");
+        setPref();
+      });
 
-        window.addEventListener('DOMContentLoaded', () => {
-            document.body.classList.remove('hidden');
-            setPref();
-        });
+      let checkBox = document.getElementById("modeCheckBox");
 
-        let checkBox = document.getElementById("modeCheckBox");
-        
-        checkBox.addEventListener("keydown", (e) => {
-        if( e.key === "Enter"){
-        checkBox.checked = !checkBox.checked;
-        toggleLightDark();
+      checkBox.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") {
+          checkBox.checked = !checkBox.checked;
+          toggleLightDark();
         }
-        });
+      });
 
-        function toggleLightDark() {
-            if (checkBox.checked) {
-                let element = document.body;
-                element.classList.add('dark-mode')
-                element.classList.remove('light-mode')
-                localStorage.setItem("mode", "dark")
-            } else {
-                let element = document.body;
-                element.classList.add('light-mode')
-                element.classList.remove('dark-mode')
-                localStorage.setItem("mode", "light")
-            }
+      function toggleLightDark() {
+        if (checkBox.checked) {
+          let element = document.body;
+          element.classList.add("dark-mode");
+          element.classList.remove("light-mode");
+          localStorage.setItem("mode", "dark");
+        } else {
+          let element = document.body;
+          element.classList.add("light-mode");
+          element.classList.remove("dark-mode");
+          localStorage.setItem("mode", "light");
         }
-        checkBox.addEventListener("change", toggleLightDark);
-
-        
-
+      }
+      checkBox.addEventListener("change", toggleLightDark);
     </script>
 
     <div class="container">
-        <div class="box1">
-           
-        <h1>About me:</h1> 
-        <p>Thanks for visiting. 🐱</p>
-        
+      <div class="hyperlinked-icons">
+        <div class="item">
+          <a
+            target="_blank"
+            href="https://github.com/be-part"
+            aria-label="GitHub link"
+          >
+            <img
+              id="inverse"
+              src="./assets/icons/github-icon.png"
+              alt="git hub logo icon"
+          /></a>
         </div>
-        <main class="box2">
-            <div class="border-wrap1">
-                <div id="about-me-container">
-                    
-                    <h2 class="about-me-headings">Currently</h2>
-                    <p>
-                    I've recently graduated from the Northcoders 13-week software developer bootcamp. It was a challenging, dynamic and fast-paced learning experience that helped me develop into a full-stack junior software developer.
-                    </p>
 
-                    <h2 class="about-me-headings">Previously</h2>
-                    <p>
-                    I graduated from Lancaster University with a Bachelor of Science in Biology with Psychology and completed a PGCE from the University of Chester. I love learning and was a primary teacher for several years, spending some time specialising in teaching coding and computing. I became fascinated with coding and decided to make the switch!
-                    </p>
+        <div class="item">
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/bronwyn-parton/"
+            aria-label="LinkedIn profile for Bronwyn Parton"
+          >
+            <img
+              id="inverse"
+              src="./assets/icons/linkedin-icon.png"
+              alt="linked in logo icon"
+          /></a>
+        </div>
+      </div>
 
-                    <h2 class="about-me-headings">Furthermore</h2>
-                    <p>
-                    Other than coding, I love reading and writing science fiction and spending time with my cats.
-                    </p>
+      <div class="box1">
+        <div class="typewriter">
+          <h1>About me:</h1>
+        </div>
+        <p class="projects-text">Thanks for visiting.</p>
+      </div>
 
-                </div>
+      <main class="box2">
+        <div class="main-container">
+          <div class="box-header">
+            <p>🗒️Untitled - Notepad</p>
+            <div style="display: flex; padding-right: 5px; align-items: center">
+              <img
+                src="./assets/window-icons/maximize.png"
+                alt="maximize window icon"
+              />
+              <img
+                src="./assets/window-icons/minimize.png"
+                alt="minimize window icon"
+              />
+              <img
+                src="./assets/window-icons/close-window.png"
+                alt="close window icon"
+              />
             </div>
+          </div>
+          <div class="border-wrap">
+            <div class="about-me-container">
+              <h2 class="about-me-headings">Currently</h2>
+              <p>- - - - - - - - - - - - - - - - - - -</p>
+              <p style="margin-bottom: 15px;">
+                I have recently graduated from the <span class="emphasis-text">intensive 13-week software developer bootcamp</span> at Northcoders. This exciting experience has equipped me with the skills and knowledge necessary to embark on a career as a junior full-stack software developer.
+                I'm now committed to continuously enhancing my proficiency in <span class="emphasis-text">C# and the .NET framework</span>. Check back to see some of my upcoming projects!
+              </p>
+              <h2 class="about-me-headings">Previously</h2>
+              <p>- - - - - - - - - - - - - - - - - - -</p>
+              <p style="margin-bottom: 15px;">
+                After graduating from Lancaster University with a BSc in Biology with Psychology, I went on to pursue a career in teaching for several years. My experiences combined have helped me develop skills in problem-solving, communication, organisation and thinking creatively. I have a <span class="emphasis-text">natural curiosity</span> and a <span class="emphasis-text">passion for learning</span> - and so I made the switch to coding.
+              </p>
 
-        </main>
+              <h2 class="about-me-headings">Furthermore</h2>
+              <p>- - - - - - - - - - - - - - - - - - -</p>
+              <p style="margin-bottom: 15px;">
+                Other than coding, I love reading and writing science fiction and spending time with my cats. 🐱 👽
+              </p>
+            </div>
+          </div>
+        </div>
+      </main>
     </div>
 
     <footer class="footer">
-        <p class="credits">icons by</p>
-        <a class="credits" target="_blank" aria-label="Icons8 website" href="https://icons8.com">Icons8</a>
+      <p class="credits">icons by</p>
+      <a
+        class="credits"
+        target="_blank"
+        aria-label="Icons8 website"
+        href="https://icons8.com"
+        >Icons8</a
+      >
     </footer>
-
-</body>
+  </body>
 </html>
