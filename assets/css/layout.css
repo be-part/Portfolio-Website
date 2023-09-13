@@ -23,10 +23,6 @@ body {
   justify-content: center;
 }
 
-.bold {
-  font-weight: bold;
-}
-
 .box1 {
   flex: 1;
   display: flex;
