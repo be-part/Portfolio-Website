@@ -95,6 +95,10 @@
   color: #000000;
 }
 
+.light-mode .index-headings {
+  color: #000000;
+}
+
 .light-mode .emphasis-text{
   color:#662C92;
 }
