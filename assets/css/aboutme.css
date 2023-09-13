@@ -1,47 +1,23 @@
-.typewriter h1 {
-    color: #fff;
-    font-family: monospace;
-    overflow: hidden; 
-    border-right: .15em solid #F9FB74; 
-    white-space: nowrap; 
-    margin: 0 auto; 
-    letter-spacing: .15em; 
-    animation: 
-      typing 3.5s steps(25, end),
-      blink-caret .8s step-end 10;
-      animation-fill-mode: forwards;
-  }
-  
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
-  
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: #F9FB74; }
-  }
-
 .projects-text {
-    text-align: start;
-    margin: 20px;
-    font-family: Courier New, Courier, monospace;
+  text-align: start;
+  margin: 20px;
+  font-family: Courier New, Courier, monospace;
 }
 
 .about-me-container {
-    padding: 12px;
-    margin: 0 2px 2px 2px;
-    max-width: 800px;
-    border-radius: 8px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    background-color: rgb(27, 26, 26);
+  padding: 12px;
+  margin: 0 2px 2px 2px;
+  max-width: 800px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: rgb(27, 26, 26);
   color: rgb(255, 255, 255);
 }
 
 .about-me-headings {
-    font-family: Courier New, Courier, monospace;
-    font-size: 25px;
-    color: #FFFFFF;
+  font-family: Courier New, Courier, monospace;
+  font-size: 25px;
+  color: #ffffff;
 }
