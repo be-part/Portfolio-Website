@@ -343,7 +343,7 @@ p {
   }
 
   .rc-anchor-normal {
-    width: 240px;
+    width: 240px !important;
   }
 }
 
