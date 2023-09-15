@@ -342,8 +342,8 @@ p {
     margin-right: auto;
   }
 
-  .rc-anchor-normal {
-    width: 240px !important;
+  .rc-anchor-container {
+    width: 260px !important;
   }
 }
 
