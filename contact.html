@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="../assets/css/nav.css" />
     <link rel="stylesheet" type="text/css" href="../assets/css/layout.css" />
-    <meta name="description" content="Bronwyn Parton software developer portfolio website.">
+    <meta
+      name="description"
+      content="Bronwyn Parton software developer portfolio website."
+    />
     <link
       rel="stylesheet"
       type="text/css"
@@ -169,7 +172,7 @@
                       type="text"
                       name="name"
                       placeholder="Your name.."
-                      minlength="3" 
+                      minlength="3"
                       maxlength="70"
                       required
                     />
@@ -183,7 +186,7 @@
                       type="email"
                       name="email"
                       placeholder="someone@example.com"
-                      minlength="6" 
+                      minlength="6"
                       maxlength="254"
                       required
                   /></label>
@@ -194,20 +197,52 @@
                     >Message:
                     <textarea
                       name="message"
-                      placeholder="Your message or inquiry. Maximum 2000 characters, anything more will not be sent."
+                      placeholder="Your message or enquiry. Maximum 300 characters."
                       style="height: 160px"
-                      minlength="3" 
-                      maxlength="2000"
+                      minlength="3"
+                      maxlength="300"
+                      id="message"
                       required
                     ></textarea>
                   </label>
-                  
                 </p>
+
+                <div id="character-counter">
+                  <span id="typed-characters">0</span>
+                  <span>/</span>
+                  <span id="maximum-characters">300</span>
+                </div>
+
+
                 <div data-netlify-recaptcha="true"></div>
                 <p>
-                  <button class="btn-wrapper2" type="submit">Send</button>
+                  <button class="btn-wrapper2" type="submit" id="submitBtn">Send</button>
                 </p>
               </form>
+
+              <script>
+                const messageArea = document.getElementById("message");
+                const typedCharactersElement = document.getElementById("typed-characters");
+                const characterCounterElement = document.getElementById("character-counter");
+                const submitButton = document.getElementById("submitBtn");
+
+                messageArea.addEventListener("keyup", (e) => {
+                  const typedCharacters = messageArea.value.length;
+                  typedCharactersElement.textContent = typedCharacters;
+
+                  if (typedCharacters >= 250 && typedCharacters <= 300) {
+                    typedCharactersElement.classList = "text-warning";
+                    submitButton.disabled = false; 
+                  } else {
+                    typedCharactersElement.classList.remove(
+                      "text-warning",
+                      "text-danger"
+                    )
+                    submitButton.disabled = false;
+                  }
+                });
+              </script>
+
             </div>
           </div>
         </div>

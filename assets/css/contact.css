@@ -72,3 +72,30 @@ form label {
     box-shadow: 5px 5px #551A8B;
 }
 
+#character-counter-container {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    margin: 0 auto;
+    padding: 3rem;
+    width: 60%;
+}
+
+#character-counter {
+    width: 100%;
+    text-align: right;
+    margin-top: 1rem;
+    font-family: sans-serif, Courier New, Courier, monospace;
+}
+
+.text-danger {
+    color: #d90429;
+}
+
+.btn-wrapper2:disabled {
+    background: #969494;
+    color: #7e7c7c;
+    font-weight:bold;
+    box-shadow: 5px 5px #000000;
+    cursor: not-allowed;
+    font-family: Courier New, Courier, monospace;
+}
