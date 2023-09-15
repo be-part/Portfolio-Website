@@ -81,9 +81,8 @@ form label {
 }
 
 #character-counter {
-    width: 100%;
     text-align: right;
-    margin: 5px;
+    margin: 8px;
     font-family: sans-serif, Courier New, Courier, monospace;
 }
 
