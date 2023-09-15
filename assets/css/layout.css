@@ -317,7 +317,7 @@ p {
   }
 
   .main-container {
-    max-width: 90%;
+    max-width: 80%;
   }
 
   .nav-container {
@@ -343,7 +343,7 @@ p {
   }
 
   .rc-anchor-normal {
-    width: 250px;
+    width: 240px;
   }
 }
 
