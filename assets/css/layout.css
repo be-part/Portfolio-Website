@@ -345,7 +345,8 @@ p {
 
 .g-recaptcha div:first-child
   {
-    width: 90%;
+    margin: auto;
+    width: 80%;
   }
 
 .skip-to-content-link {
