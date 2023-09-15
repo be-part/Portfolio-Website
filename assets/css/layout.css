@@ -341,13 +341,12 @@ p {
     margin-left: 0;
     margin-right: auto;
   }
+
+  .rc-anchor-normal {
+    width: 250px;
+  }
 }
 
-.g-recaptcha div:first-child
-  {
-    margin: auto;
-    width: 80%;
-  }
 
 .skip-to-content-link {
   background: #f1a739;
