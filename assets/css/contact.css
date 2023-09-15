@@ -100,3 +100,8 @@ form label {
     cursor: not-allowed;
     font-family: Courier New, Courier, monospace;
 }
+
+.rc-anchor {
+    margin-left: auto;
+    margin-right: auto;
+}
