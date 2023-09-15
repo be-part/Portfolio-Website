@@ -343,6 +343,11 @@ p {
   }
 }
 
+.g-recaptcha div:first-child
+  {
+    width: 90%;
+  }
+
 .skip-to-content-link {
   background: #f1a739;
   height: 30px;
