@@ -52,8 +52,8 @@ h1 {
   font-family: monospace;
   overflow: hidden;
   white-space: nowrap; 
-  border-right: .15em solid #F9FB74; 
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  border-right: .15em solid #662C92; 
+  margin: 0 auto;
   letter-spacing: .15em; 
   animation: 
     typing 3.5s steps(25, end),
@@ -68,7 +68,7 @@ h1 {
 
 @keyframes  blink-caret {
   from, to { border-color: transparent }
-  50% { border-color: #F9FB74; }
+  50% { border-color: #662C92; }
 }
 
 h2 {

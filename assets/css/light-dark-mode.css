@@ -80,15 +80,15 @@
 }
 
 .light-mode .box-header {
-  background: linear-gradient(to right,  #D2A540, #FC2F75);
+  background: linear-gradient(to right,  #F9AF58, #EF5564);
 }
 
 .light-mode .border-wrap {
-  background: linear-gradient(to right,  #D2A540, #FC2F75);
+  background: linear-gradient(to right,  #F9AF58, #EF5564);
 }
 
 .light-mode .border-wrap2 {
-  background: linear-gradient(to right,  #D2A540, #FC2F75);
+  background: linear-gradient(to right,  #F9AF58, #EF5564);
 }
 
 .light-mode .about-me-headings {
@@ -149,7 +149,7 @@
   border-radius: 20px;
   right: 5px; 
   bottom: 3px;
-  background: linear-gradient(40deg, #FC2F75, #D2A540 ); 
+  background: linear-gradient(40deg, #EF5564, #F9AF58 ); 
   transition: 0.4s;
 }
 
