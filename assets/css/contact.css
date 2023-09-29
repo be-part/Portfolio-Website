@@ -12,7 +12,7 @@ form input, form textarea {
     box-sizing: border-box;
     resize: vertical;
     background: #ffffff;
-    border-color: #662C92;
+    border-color: #1D21A5;
     border-width: 3px;
     border-style: solid;
 }
@@ -67,9 +67,9 @@ form label {
 
 .btn-wrapper2:hover {
     background: #969494;
-    color: #551A8B;
-    font-weight:bold;
-    box-shadow: 5px 5px #551A8B;
+    color: #1D21A5;
+    font-weight: bold;
+    box-shadow: 5px 5px #1D21A5;
 }
 
 #character-counter-container {
