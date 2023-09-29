@@ -6,7 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="../assets/css/nav.css" />
     <link rel="stylesheet" type="text/css" href="../assets/css/layout.css" />
-    <meta name="description" content="Bronwyn Parton software developer portfolio website.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta
+      name="description"
+      content="Bronwyn Parton software developer portfolio website."
+    />
     <link
       rel="stylesheet"
       type="text/css"
@@ -131,12 +137,253 @@
           Check out some of my projects - hover over the images for more
           information.
         </p>
+        <div class="dropdown-container">
+          <p>Filter by:</p>
+
+          <select id="techFilter">
+            <option class="select-option" value="all">All</option>
+            <option class="select-option" value="C#">C#</option>
+            <option class="select-option" value="JavaScript">JavaScript</option>
+            <option class="select-option" value=".NET">.NET</option>
+            <option class="select-option" value="React">React</option>
+            <option class="select-option" value="SQL">SQL</option>
+            <option class="select-option" value="PostgreSQL">PostgreSQL</option>
+            <option class="select-option" value="Firebase">Firebase</option>
+          </select>
+        </div>
+      </div>
+
+      <script>
+        const techFilter = document.getElementById("techFilter");
+        techFilter.addEventListener("change", filterProjects);
+        function filterProjects() {
+          const selectedTech = techFilter.value;
+          const projectContainers =
+            document.querySelectorAll(".main-container");
+
+          projectContainers.forEach((container) => {
+            const techButtons = container.querySelectorAll(".btn-wrapper-tech");
+
+            if (
+              selectedTech === "all" ||
+              Array.from(techButtons).some(
+                (button) => button.textContent === selectedTech
+              )
+            ) {
+              container.style.display = "block";
+            } else {
+              container.style.display = "none";
+            }
+          });
+        }
+      </script>
+
+      <div class="main-container">
+        <div class="box-header">
+          <p>📂Project1: House_of_Games_Front-End</p>
+          <div style="display: flex; padding-right: 5px; align-items: center">
+            <img
+              src="./assets/window-icons/maximize.png"
+              alt="maximize window icon"
+            />
+            <img
+              src="./assets/window-icons/minimize.png"
+              alt="minimize window icon"
+            />
+            <img
+              src="./assets/window-icons/close-window.png"
+              alt="close window icon"
+            />
+          </div>
+        </div>
+        <div class="border-wrap">
+          <div id="project-container">
+            <div class="image-container">
+              <img
+                class="project-imgs"
+                src="./assets/images/snapshot-games-fe.png"
+                alt="screenshot of the welcome page of a games review website, including a header of 'House of Games', a nav bar and a colour scheme of red, pale green and pale pink."
+              />
+              <div class="overlay">
+                <div class="text">
+                  <h2>House of Games Front-End</h2>
+                  <span class="tech-btns">
+                    <div class="btn-wrapper-tech">React</div>
+                    <div class="btn-wrapper-tech">Axios</div>
+                    <div class="btn-wrapper-tech">JavaScript</div>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="text-container">
+              <p>
+                This is <span class="emphasis-text"> ½ </span> of a
+                <span class="emphasis-text"> full stack </span> project. The
+                second half is the House of Games API project, also listed on
+                this page. 
+                A <span class="emphasis-text">front-end application</span> for
+                board game reviews, featuring
+                <span class="emphasis-text">filtering</span> functionalities and <span class="emphasis-text">user engagement</span> features,
+                including commenting and voting.
+              </p>
+              <div>
+                <a
+                  class="btn-wrapper1"
+                  target="_blank"
+                  href="https://bp-house-of-games.netlify.app/"
+                  >View live</a
+                >
+                <a
+                  class="btn-wrapper1"
+                  target="_blank"
+                  href="https://github.com/be-part/BP-NC-Games-Frontend"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-container">
+        <div class="box-header">
+          <p>📂Project2: House_of_Games_API</p>
+          <div style="display: flex; padding-right: 5px; align-items: center">
+            <img
+              src="./assets/window-icons/maximize.png"
+              alt="maximize window icon"
+            />
+            <img
+              src="./assets/window-icons/minimize.png"
+              alt="minimize window icon"
+            />
+            <img
+              src="./assets/window-icons/close-window.png"
+              alt="close window icon"
+            />
+          </div>
+        </div>
+        <div class="border-wrap">
+          <div id="project-container">
+            <div class="image-container">
+              <img
+                class="project-imgs"
+                src="./assets/images/snapshot-games-be.png"
+                alt="screenshot of the beginning of a list of API endpoints, including 3 GET requests and examples of the responses."
+              />
+              <div class="overlay">
+                <div class="text">
+                  <h2>House of Games API</h2>
+                  <span class="tech-btns">
+                    <div class="btn-wrapper-tech">PostgreSQL</div>
+                    <div class="btn-wrapper-tech">Express</div>
+                    <div class="btn-wrapper-tech">SQL</div>
+                    <div class="btn-wrapper-tech">Jest</div>
+                    <div class="btn-wrapper-tech">Supertest</div>
+                    <div class="btn-wrapper-tech">JavaScript</div>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="text-container">
+              <p>
+                This is <span class="emphasis-text"> ½ </span> of a
+                <span class="emphasis-text"> full stack </span> project. The
+                second half is the House of Games Front-End project, also listed
+                on this page. An
+                <span class="emphasis-text"> API</span> for searching
+                board game reviews; users can 
+                <span class="emphasis-text">get</span> reviews and comments,
+                <span class="emphasis-text">post</span> comments and vote. The project includes a comprehensive
+                <span class="emphasis-text">testing suite</span> using Jest and
+                Supertest.
+              </p>
+              <div>
+                <a
+                  class="btn-wrapper1"
+                  target="_blank"
+                  href="https://nc-games-bp.onrender.com/api/"
+                  >View live</a
+                >
+                <a
+                  class="btn-wrapper1"
+                  target="_blank"
+                  href="https://github.com/be-part/BP-NC-Games-Backend"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-container">
+        <div class="box-header">
+          <p>📂Project3: Insectispy</p>
+          <div style="display: flex; padding-right: 5px; align-items: center">
+            <img
+              src="./assets/window-icons/maximize.png"
+              alt="maximize window icon"
+            />
+            <img
+              src="./assets/window-icons/minimize.png"
+              alt="minimize window icon"
+            />
+            <img
+              src="./assets/window-icons/close-window.png"
+              alt="close window icon"
+            />
+          </div>
+        </div>
+        <div class="border-wrap">
+          <div id="project-container">
+            <div class="image-container">
+              <img
+                class="project-imgs"
+                src="./assets/images/insectispy.png"
+                alt="two screenshots of an app; a homepage of the app showing a grassy landscape and options such as 'Bug Snapper' and 'Bug Journey'; and a rewards page with different coloured badges."
+              />
+              <div class="overlay">
+                <div class="text">
+                  <h2>InsectiSpy</h2>
+                  <span class="tech-btns">
+                    <div class="btn-wrapper-tech">Firebase</div>
+                    <div class="btn-wrapper-tech">Expo</div>
+                    <div class="btn-wrapper-tech">React Native</div>
+                    <div class="btn-wrapper-tech">Tensorflow</div>
+                    <div class="btn-wrapper-tech">JavaScript</div>
+                    <div class="btn-wrapper-tech">TypeScript</div>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="text-container">
+              <p>
+                As part of Northcoders, our team created an
+                <span class="emphasis-text">Android app</span> that leverages
+                <span class="emphasis-text">machine learning</span> to gamify
+                insect learning. Users can capture insect images, access
+                scientific and common names, and receive trivia. It incorporates
+                a points system, leveling up, and badge unlocking based on
+                insect discoveries.
+              </p>
+              <div>
+                <a
+                  class="btn-wrapper1"
+                  target="_blank"
+                  href="https://northcoders.com/projects/june-2023/insectispy"
+                  >View demo</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <main class="box2">
         <div class="main-container">
           <div class="box-header">
-            <p>📂Project1: Calculator_App</p>
+            <p>📂Project4: Calculator_App</p>
             <div style="display: flex; padding-right: 5px; align-items: center">
               <img
                 src="./assets/window-icons/maximize.png"
@@ -170,18 +417,21 @@
                   </div>
                 </div>
               </div>
-
               <div class="text-container">
                 <p>
-                  A <span class="emphasis-text">Windows Forms App</span> using the .NET framework to create a functioning calculator. It has a basic and scientific form, as well as a history to show the user's last eight calculations. This helped me further understand <span class="emphasis-text">classes</span> and <span class="emphasis-text">interfaces</span> in C#.
+                  A <span class="emphasis-text">Windows Forms App</span> using
+                  the .NET framework to create a functioning calculator. It has
+                  a basic and scientific form, as well as a history to show the
+                  user's last eight calculations. This helped me further
+                  understand <span class="emphasis-text">classes</span> and
+                  <span class="emphasis-text">interfaces</span> in C#.
                 </p>
-
                 <div>
                   <a
-                    class="btn-wrapper2"
+                    class="btn-wrapper1"
                     target="_blank"
                     href="https://github.com/be-part/CalculatorApp"
-                    >View on GitHub</a
+                    >GitHub</a
                   >
                 </div>
               </div>
@@ -189,9 +439,9 @@
           </div>
         </div>
 
-          <div class="main-container">
+        <div class="main-container">
           <div class="box-header">
-            <p>📂Project2: Curious_Companions</p>
+            <p>📂Project5: Curious_Companions</p>
             <div style="display: flex; padding-right: 5px; align-items: center">
               <img
                 src="./assets/window-icons/maximize.png"
@@ -227,15 +477,14 @@
                   </div>
                 </div>
               </div>
-
               <div class="text-container">
                 <p>
                   A <span class="emphasis-text">front-end application</span> for
                   viewing information about cat and dog breeds, featuring
-                  <span class="emphasis-text">responsive web design</span> and uses 
-                  <span class="emphasis-text">SCSS</span> and <span class="emphasis-text">custom hooks</span>.
+                  <span class="emphasis-text">responsive web design</span> and
+                  uses <span class="emphasis-text">SCSS</span> and
+                  <span class="emphasis-text">custom hooks</span>.
                 </p>
-
                 <div>
                   <a
                     class="btn-wrapper1"
@@ -244,213 +493,10 @@
                     >View live</a
                   >
                   <a
-                    class="btn-wrapper2"
+                    class="btn-wrapper1"
                     target="_blank"
                     href="https://github.com/be-part/Curious_Companions"
-                    >View on GitHub</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="main-container">
-          <div class="box-header">
-            <p>📂Project3: House_of_Games</p>
-            <div style="display: flex; padding-right: 5px; align-items: center">
-              <img
-                src="./assets/window-icons/maximize.png"
-                alt="maximize window icon"
-              />
-              <img
-                src="./assets/window-icons/minimize.png"
-                alt="minimize window icon"
-              />
-              <img
-                src="./assets/window-icons/close-window.png"
-                alt="close window icon"
-              />
-            </div>
-          </div>
-          <div class="border-wrap">
-            <div id="project-container">
-              <div class="image-container">
-                <img
-                  class="project-imgs"
-                  src="./assets/images/snapshot-games-fe.png"
-                  alt="screenshot of the welcome page of a games review website, including a header of 'House of Games', a nav bar and a colour scheme of red, pale green and pale pink."
-                />
-                <div class="overlay">
-                  <div class="text">
-                    <h2>House of Games</h2>
-                    <span class="tech-btns">
-                      <div class="btn-wrapper-tech">React</div>
-                      <div class="btn-wrapper-tech">Axios</div>
-                      <div class="btn-wrapper-tech">JavaScript</div>
-                    </span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="text-container">
-                <p>
-                  A <span class="emphasis-text">front-end application</span> for
-                  board game reviews, featuring
-                  <span class="emphasis-text">search</span> and
-                  <span class="emphasis-text">filtering</span> functionalities.
-                  I've also implemented
-                  <span class="emphasis-text">user engagement</span> features,
-                  including commenting and voting. Explore my work to see the
-                  code or see the app in action.
-                </p>
-
-                <div>
-                  <a
-                    class="btn-wrapper1"
-                    target="_blank"
-                    href="https://bp-house-of-games.netlify.app/"
-                    >View live</a
-                  >
-                  <a
-                    class="btn-wrapper2"
-                    target="_blank"
-                    href="https://github.com/be-part/BP-NC-Games-Frontend"
-                    >View on GitHub</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="main-container">
-          <div class="box-header">
-            <p>📂Project4: House_of_Games_API</p>
-            <div style="display: flex; padding-right: 5px; align-items: center">
-              <img
-                src="./assets/window-icons/maximize.png"
-                alt="maximize window icon"
-              />
-              <img
-                src="./assets/window-icons/minimize.png"
-                alt="minimize window icon"
-              />
-              <img
-                src="./assets/window-icons/close-window.png"
-                alt="close window icon"
-              />
-            </div>
-          </div>
-          <div class="border-wrap">
-            <div id="project-container">
-              <div class="image-container">
-                <img
-                  class="project-imgs"
-                  src="./assets/images/snapshot-games-be.png"
-                  alt="screenshot of the beginning of a list of API endpoints, including 3 GET requests and examples of the responses."
-                />
-                <div class="overlay">
-                  <div class="text">
-                    <h2>House of Games API</h2>
-                    <span class="tech-btns">
-                      <div class="btn-wrapper-tech">Postgres</div>
-                      <div class="btn-wrapper-tech">Express</div>
-                      <div class="btn-wrapper-tech">SQL</div>
-                      <div class="btn-wrapper-tech">Jest</div>
-                      <div class="btn-wrapper-tech">Supertest</div>
-                      <div class="btn-wrapper-tech">JavaScript</div>
-                    </span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="text-container">
-                <p>
-                  A <span class="emphasis-text">back-end API</span> for
-                  searching board game reviews, offering capabilities to
-                  <span class="emphasis-text">access</span> reviews and
-                  comments, <span class="emphasis-text">post</span> comments,
-                  and vote on existing reviews. The project includes a
-                  comprehensive
-                  <span class="emphasis-text">testing suite</span> using Jest
-                  and Supertest to ensure robust functionality.
-                </p>
-                <div>
-                  <a
-                    class="btn-wrapper1"
-                    target="_blank"
-                    href="https://nc-games-bp.onrender.com/api/"
-                    >View live</a
-                  >
-                  <a
-                    class="btn-wrapper2"
-                    target="_blank"
-                    href="https://github.com/be-part/BP-NC-Games-Backend"
-                    >View on GitHub</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="main-container">
-          <div class="box-header">
-            <p>📂Project5: Insectispy</p>
-            <div style="display: flex; padding-right: 5px; align-items: center">
-              <img
-                src="./assets/window-icons/maximize.png"
-                alt="maximize window icon"
-              />
-              <img
-                src="./assets/window-icons/minimize.png"
-                alt="minimize window icon"
-              />
-              <img
-                src="./assets/window-icons/close-window.png"
-                alt="close window icon"
-              />
-            </div>
-          </div>
-          <div class="border-wrap">
-            <div id="project-container">
-              <div class="image-container">
-                <img
-                  class="project-imgs"
-                  src="./assets/images/insectispy.png"
-                  alt="two screenshots of an app; a homepage of the app showing a grassy landscape and options such as 'Bug Snapper' and 'Bug Journey'; and a rewards page with different coloured badges."
-                />
-                <div class="overlay">
-                  <div class="text">
-                    <h2>InsectiSpy</h2>
-                    <span class="tech-btns">
-                      <div class="btn-wrapper-tech">Firebase</div>
-                      <div class="btn-wrapper-tech">Expo</div>
-                      <div class="btn-wrapper-tech">React Native</div>
-                      <div class="btn-wrapper-tech">Tensorflow</div>
-                      <div class="btn-wrapper-tech">JavaScript</div>
-                      <div class="btn-wrapper-tech">TypeScript</div>
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div class="text-container">
-                <p>
-                  As part of Northcoders, our team created an
-                  <span class="emphasis-text">Android app</span> that leverages
-                  <span class="emphasis-text">machine learning</span> to gamify
-                  insect learning. Users can capture insect images, access
-                  scientific and common names, and receive trivia. It
-                  incorporates a points system, leveling up, and badge unlocking
-                  based on insect discoveries.
-                </p>
-                <div>
-                  <a
-                    class="btn-wrapper1"
-                    target="_blank"
-                    href="https://northcoders.com/projects/june-2023/insectispy"
-                    >View demo</a
+                    >GitHub</a
                   >
                 </div>
               </div>
@@ -495,7 +541,6 @@
                   </div>
                 </div>
               </div>
-
               <div class="text-container">
                 <p>
                   <span class="emphasis-text">This website!</span> I wanted to
@@ -514,10 +559,10 @@
                     >View live</a
                   >
                   <a
-                    class="btn-wrapper2"
+                    class="btn-wrapper1"
                     target="_blank"
                     href="https://github.com/be-part/Portfolio-Website"
-                    >View on GitHub</a
+                    >GitHub</a
                   >
                 </div>
               </div>
