@@ -52,7 +52,7 @@ h1 {
   font-family: monospace;
   overflow: hidden;
   white-space: nowrap; 
-  border-right: .15em solid #662C92; 
+  border-right: .15em solid var(--border-color);
   margin: 0 auto;
   letter-spacing: .15em; 
   animation: 
@@ -63,22 +63,23 @@ h1 {
 
 @keyframes typing {
   from { width: 0 }
-  to { width: 100% }
+  to { width: 100%; border-right-color: var(--border-color); }
 }
 
 @keyframes  blink-caret {
   from, to { border-color: transparent }
-  50% { border-color: #662C92; }
+  50% { border-color: var(--border-color); }
 }
 
 h2 {
-  font-family: sans-serif, Courier New, Courier, monospace;
+  font-family: 'Open Sans', sans-serif, Courier New, Courier, monospace;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 26px;
+  margin-bottom: 4px;
 }
 
 p {
-  font-family: sans-serif, Courier New, Courier, monospace;
+  font-family: 'Open Sans', sans-serif, Courier New, Courier, monospace;
   font-weight: 400;
   font-size: 18px;
   margin: 5px;
@@ -87,17 +88,16 @@ p {
 
 .emphasis-text {
   font-weight: bold;
-  font-size: 18px;
-  color:#F9FB74;
+  color:#f0d662;
 }
 
 .main-container {
   border-width: 4px;
   border-style: ridge;
-  border-color: #E5F8FF;
+  border-color: #d9e5e9;
   border-radius: 2px;
   box-shadow: -6px 6px;
-  margin: 10px;
+  margin: 15px;
 }
 
 .box-header p {
@@ -117,14 +117,14 @@ p {
    flex-direction: row;
    justify-content: space-between;
    align-items: center;
-   background: linear-gradient(to right, #662C92, #42FEFF);
+   background: linear-gradient(to right, #827bcf, #42FEFF);
  }
  
  .border-wrap {
    max-width: 900px;
    position: relative;
    padding: 0 1px 1px 1px;
-   background: linear-gradient(to right, #662C92, #42FEFF);
+   background: linear-gradient(to right, #9e96f3, #42FEFF);
  }
 
 .hyperlinked-icons {
@@ -353,7 +353,7 @@ p {
   position: absolute;
   transform: translateY(-200%);
   transition: transform 0.3s;
-  font-family: "Roboto Slab", "sans-serif", "Courier New", Courier, monospace;
+  font-family: 'Open Sans' , sans-serif, Courier New, Courier, monospace;
   font-weight: 400;
   font-size: medium;
 }
@@ -378,7 +378,7 @@ p {
 }
 
 .credits {
-  font-family: "Roboto Slab", "sans-serif", "Courier New", Courier, monospace;
+  font-family: 'Open Sans', sans-serif, Courier New, Courier, monospace;
   font-size: 12px;
   display: inline;
   color: #FFFFFF;

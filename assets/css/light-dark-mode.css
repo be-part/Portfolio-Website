@@ -1,3 +1,12 @@
+:root {
+  --border-color: white;
+}
+
+.light-mode {
+  --border-color: black;
+}
+
+
 .light-mode .typewriter h1 {
   color: #000;
 }
@@ -11,19 +20,26 @@
     background-color: rgb(252, 252, 252);
 }
 
+.light-mode .typewriter h1 {
+  border-right-color: #000;
+}
+
+
+
 .light-mode .nav-a  {
     color:rgb(0, 0, 0)
 }
 
 .light-mode .nav-a:hover {
-  color:#662C92;
+  color:#F3C02D;
   transition: 0.2s;
 }
 
 .light-mode #active {
-  color: #662C92;
-  border-bottom: 4px solid #662C92;
+  color: #F3C02D;
+  border-bottom: 4px solid #F3C02D;
   transition: 0.3s;
+  font-weight: bold;
 }
 
 .light-mode #intro {
@@ -72,7 +88,7 @@
 }
 
 .light-mode .btn-wrapper1 {
-  box-shadow: 5px 5px rgba(0, 0, 0, 0.74);
+  box-shadow: 5px 5px black;
 }
 
 .light-mode .btn-wrapper2 {
@@ -80,15 +96,11 @@
 }
 
 .light-mode .box-header {
-  background: linear-gradient(to right,  #F9AF58, #EF5564);
+  background: linear-gradient(to right,  #CF5DC8, #F7CC19);
 }
 
 .light-mode .border-wrap {
-  background: linear-gradient(to right,  #F9AF58, #EF5564);
-}
-
-.light-mode .border-wrap2 {
-  background: linear-gradient(to right,  #F9AF58, #EF5564);
+  background: linear-gradient(to right,  #CF5DC8, #F7CC19);
 }
 
 .light-mode .about-me-headings {
@@ -100,7 +112,7 @@
 }
 
 .light-mode .emphasis-text{
-  color:#662C92;
+  color:#00B2F7;
 }
 
 .light-mode #inverse {
