@@ -63,6 +63,7 @@ form label {
     white-space: nowrap;
     margin: 8px;
     color: black;
+    box-shadow: 5px 5px white;
 }
 
 .btn-wrapper2:hover {
